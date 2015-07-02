@@ -39,31 +39,6 @@ return [
                     ],
                 ],
             ],
-            'work' => [
-                'type' => 'Literal',
-                'options' => [
-                    'route'    => '/work',
-                    'defaults' => [
-                        'controller' => 'Application\Controller\Work',
-                        'action'     => 'index',
-                    ],
-                ],
-                'may_terminate' => true,
-                'child_routes' => [
-                    'default' => [
-                        'type'    => 'Segment',
-                        'options' => [
-                            'route'    => '/[:controller[/:action]]',
-                            'constraints' => [
-                                'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                                'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
-                            ],
-                            'defaults' => [
-                            ],
-                        ],
-                    ],
-                ],
-            ],
             'about' => [
                 'type' => 'Literal',
                 'options' => [
@@ -118,7 +93,6 @@ return [
     'controllers' => [
         'invokables' => [
             'Application\Controller\Index'   => 'Application\Controller\IndexController',
-            'Application\Controller\Work'    => 'Application\Controller\WorkController',
             'Application\Controller\About'   => 'Application\Controller\AboutController',
             'Application\Controller\Blog'    => 'Application\Controller\BlogController',
             'Application\Controller\Contact' => 'Application\Controller\ContactController',

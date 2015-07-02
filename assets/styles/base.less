@@ -92,6 +92,7 @@ input[type="submit"],
 input[type="button"], 
 textarea,
 select {
+    resize: vertical;
     appearance: none;  /* for mobile safari */
     -webkit-appearance: none;
 }
@@ -2045,7 +2046,7 @@ body.no-header-wrapper {
     .bottom-bar {
         background: darken(@color-2, 23%);
         color: rgba(256, 256, 256, 0.5);
-        padding: 15px 15px 0 15px; // default 15px
+        padding: 15px 0; // default 15px
         text-align: center;
         .copyright {
             display: block;

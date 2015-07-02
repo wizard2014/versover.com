@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Global navigation config
  */
@@ -8,23 +7,19 @@ return [
     'navigation' => [
         'default' => [
             [
-                'label' => 'Home',
+                'label' => 'Главная',
                 'route' => 'home',
                 'class' => 'nav-item'
             ], [
-                'label' => 'Work',
-                'route' => 'work',
-                'class' => 'nav-item'
-            ], [
-                'label' => 'About',
+                'label' => 'О нас',
                 'route' => 'about',
                 'class' => 'nav-item'
             ], [
                 'label' => 'Blog',
                 'route' => 'blog',
-                'class' => 'nav-item'
+                'class' => 'nav-item hide'
             ], [
-                'label' => 'Contact',
+                'label' => 'Контакты',
                 'route' => 'contact',
                 'class' => 'nav-item'
             ]
