@@ -60,15 +60,19 @@ return [
                 ],
             ],
             'contact' => [
-                'type' => 'Literal',
+                'type' => 'Segment',
                 'options' => [
-                    'route'    => '/contact',
+                    'route' => '/contact[/:action]',
+                    'constraints' => [
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                    ],
                     'defaults' => [
                         'controller' => 'Application\Controller\Contact',
                         'action'     => 'index',
                     ],
                 ],
             ],
+
         ],
     ],
     'service_manager' => [
@@ -113,6 +117,9 @@ return [
         'template_path_stack' => [
             __DIR__ . '/../view',
         ],
+        'strategies' => [
+            'ViewJsonStrategy'
+        ],
     ],
     // Placeholder for console routes
     'console' => [
@@ -120,5 +127,9 @@ return [
             'routes' => [
             ],
         ],
+    ],
+    // mail
+    'mailman' => [
+
     ],
 ];

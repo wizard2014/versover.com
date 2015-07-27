@@ -15,13 +15,13 @@ $this->headTitle($title);
 <section class="contact-section section">
     <div class="container">
         <h2 class="title text-center">Начните проект сегодня</h2>
-        <p class="intro text-center">Если у вас есть предложение, вопрос - смело пишите нам - мы ответим Вам в ближейшее время!</p>
+        <p class="intro text-center">Если у вас есть предложение, вопрос - смело пишите нам - мы ответим Вам в ближайшее время!</p>
         <ul class="contact-info list-inline text-center">
             <li class="tel"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><br /> <a href="tel:+380675623777">0675623777</a></li>
             <li class="email"><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><br /> <a href="mailto:versoverteam@gmail.com">versoverteam@gmail.com</a></li>
             <li class="skype"><span class="fs1" aria-hidden="true" data-icon="&#xe0a2;"></span><br /> <a href="skype:versover?chat">Versover</a></li>
         </ul>
-        <form id="contact-form" class="contact-form form" method="post" action="#">
+        <form id="contact-form" class="contact-form form" method="post" action="<?= $this->url('contact', ['action' => 'send']); ?>">
             <div class="row text-center">
                 <div class="contact-form-inner col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">
                     <div class="row">
@@ -34,11 +34,15 @@ $this->headTitle($title);
                             <input type="email" class="form-control" id="cemail" name="email" placeholder="Ваш email" required>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                            <label class="sr-only" for="csubject">Тема</label>
+                            <input type="text" class="form-control" id="csubject" name="subject" placeholder="Тема" required>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 form-group">
                             <label class="sr-only" for="cmessage">Ваше сообщение</label>
                             <textarea class="form-control" id="cmessage" name="message" placeholder="Ваше сообщение" rows="12" required></textarea>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                            <button type="submit" class="btn btn-block btn-cta btn-cta-primary">Отправить сообщение</button>
+                            <button type="submit" class="btn btn-block btn-cta btn-cta-primary sbm-btn">Отправить сообщение</button>
                         </div>
                     </div><!--//row-->
                 </div>

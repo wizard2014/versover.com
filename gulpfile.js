@@ -49,6 +49,7 @@ gulp.task('scripts', function() {
         paths.assets  + '/script/form-validation-custom.js',
         paths.assets  + '/scripts/form-mobile-fix.js',
         paths.assets  + '/scripts/owl-custom.js',
+        paths.assets  + '/scripts/mail.js',
         paths.assets  + '/scripts/main.js'
     ])
         .pipe(concat('app.js'))
