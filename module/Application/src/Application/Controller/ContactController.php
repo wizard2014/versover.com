@@ -7,8 +7,6 @@ use Zend\View\Model\JsonModel;
 use Zend\View\Model\ViewModel;
 
 use MailMan\Message;
-use Zend\Mail\Transport\Smtp as SmtpTransport;
-use Zend\Mail\Transport\SmtpOptions;
 
 class ContactController extends AbstractActionController
 {
@@ -51,7 +49,7 @@ class ContactController extends AbstractActionController
 
     protected function validate($data)
     {
-        $result = array();
+        $result = [];
 
         if (!empty($data['email']) && !empty($data['name']) && !empty($data['message']) && !empty($data['subject'])) {
             if (filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {

@@ -34,7 +34,7 @@
                 <header id="header" class="header navbar-fixed-top">
                     <div class="container">
                         <h1 class="logo">
-                            <a href="<?php echo $this->url('home'); ?>"><span class="highlight">V</span>ersover</a>
+                            <a href="<?= $this->url('home'); ?>"><span class="highlight">V</span>ersover</a>
                         </h1><!--//logo-->
                         <nav class="main-nav navbar-right" role="navigation">
                             <div class="navbar-header">
@@ -46,7 +46,7 @@
                                 </button><!--//nav-toggle-->
                             </div><!--//navbar-header-->
                             <div id="navbar-collapse" class="navbar-collapse collapse">
-                                <?php echo $this->navigation('navigation')->menu()->setULClass('nav navbar-nav'); ?><!--//nav-->
+                                <?= $this->navigation('navigation')->menu()->setULClass('nav navbar-nav'); ?><!--//nav-->
                             </div><!--//navabr-collapse-->
                         </nav><!--//main-nav-->
                     </div><!--//container-->
@@ -110,7 +110,7 @@
                 </div><!--//footer-content-->
                 <div class="bottom-bar">
                     <div class="container center">
-                        <small class="copyright text-center">&copy; <a href="<?= $this->url('home'); ?>">Versover</a> <?php echo date('Y'); ?></small>
+                        <small class="copyright text-center">&copy; <a href="<?= $this->url('home'); ?>">Versover</a> <?= date('Y'); ?></small>
                     </div><!--//container-->
                 </div><!--//bottom-bar-->
             </footer><!--//footer-->

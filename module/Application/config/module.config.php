@@ -130,6 +130,8 @@ return [
     ],
     // mail
     'mailman' => [
+        'MailMan\SMTP' => [
 
+        ],
     ],
 ];
