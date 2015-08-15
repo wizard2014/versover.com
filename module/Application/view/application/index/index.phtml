@@ -1,5 +1,5 @@
 <?php
-$title = 'Главная';
+$title = $this->translate('Главная');
 $this->headTitle($title);
 ?>
 <div class="replace hide">
@@ -15,9 +15,9 @@ $this->headTitle($title);
     <section id="home-promo" class="home-promo section">
         <div class="container text-center">
             <div class="title">
-                <span class="upper">Мы создаем</span>
-                <span class="middle">Веб-приложения</span>
-                <span class="bottom">для стартапов и организаций</span>
+                <span class="upper"><?= $this->translate('Мы создаем'); ?></span>
+                <span class="middle"><?= $this->translate('Веб-приложения'); ?></span>
+                <span class="bottom"><?= $this->translate('для стартапов и организаций'); ?></span>
             </div>
             <button class="btn btn-cta btn-cta-primary" type="button" data-toggle="modal" data-target="#modal-contact" data-backdrop="static">Обратитесь к нам</button>
         </div><!--//container-->
@@ -26,15 +26,15 @@ $this->headTitle($title);
 <!-- ******Why Section****** -->
 <section id="who" class="who section">
     <div class="container text-center">
-        <h2 class="title text-center">Кто мы</h2>
-        <p class="intro text-center"><strong class="highlight">Versover</strong> - веб-разработчики с полным спектром услуг, специализирующаяся на PHP и Zend Framework.</p>
+        <h2 class="title text-center"><?= $this->translate('Кто мы'); ?></h2>
+        <p class="intro text-center"><strong class="highlight">Versover</strong> - <?= $this->translate('веб-разработчики с полным спектром услуг, специализирующаяся на PHP и Zend Framework'); ?>.</p>
         <div class="row benefits text-center">
             <div class="item col-md-3 col-sm-6 col-xs-12">
                 <div class="item-inner">
                     <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" class="brand-logo php"></a>
                     <h3 class="sub-title">PHP</h3>
                     <div class="desc">
-                        <p>Один из лидеров среди языков, применяющихся для создания динамических веб-приложений.</p>
+                        <p><?= $this->translate('Один из лидеров среди языков, применяющихся для создания динамических веб-приложений.'); ?></p>
                     </div>
                 </div>
             </div><!--//item-->
@@ -43,7 +43,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/Zend_Framework" target="_blank" class="brand-logo zendframework"></a>
                     <h3 class="sub-title">Zend Framework</h3>
                     <div class="desc">
-                        <p>Один из наиболее мощных программных каркасов для разработки веб-приложений.</p>
+                        <p><?= $this->translate('Один из наиболее мощных программных каркасов для разработки веб-приложений.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -52,7 +52,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/MySQL" target="_blank" class="brand-logo mysql"></a>
                     <h3 class="sub-title">MySQL</h3>
                     <div class="desc">
-                        <p>Свободная реляционная система управления базами данных. MySQL является решением для малых и средних приложений.</p>
+                        <p><?= $this->translate('Свободная реляционная система управления базами данных. MySQL является решением для малых и средних приложений.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -61,7 +61,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/PostgreSQL" target="_blank" class="brand-logo postgresql"></a>
                     <h3 class="sub-title">PostgreSQL</h3>
                     <div class="desc">
-                        <p>Объектно-реляционная система управления базами данных. Обладает богатым функционалом. Подходит для средних и крупных проектов.</p>
+                        <p><?= $this->translate('Объектно-реляционная система управления базами данных. Обладает богатым функционалом. Подходит для средних и крупных проектов.'); ?></p>
                     </div>
                 </div>
             </div><!--//item-->
@@ -72,7 +72,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/SQLite" target="_blank" class="brand-logo sqlite"></a>
                     <h3 class="sub-title">SQLite</h3>
                     <div class="desc">
-                        <p>Компактная встраиваемая реляционная база данных. Хорошее решение для небольших проектов.</p>
+                        <p><?= $this->translate('Компактная встраиваемая реляционная база данных. Хорошее решение для небольших проектов.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -81,7 +81,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="brand-logo javascript"></a>
                     <h3 class="sub-title">JavaScript</h3>
                     <div class="desc">
-                        <p>Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности веб-страницам.</p>
+                        <p><?= $this->translate('Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности веб-страницам.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -90,7 +90,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/JQuery" target="_blank" class="brand-logo jquery"></a>
                     <h3 class="sub-title">jQuery</h3>
                     <div class="desc">
-                        <p>Популярная JavaScript библиотека, которая обладает большим набором возможностей для создания великолепных визуальных эффектов и не только.</p>
+                        <p><?= $this->translate('Популярная JavaScript библиотека, которая обладает большим набором возможностей для создания великолепных визуальных эффектов и не только.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -99,7 +99,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank" class="brand-logo ajax"></a>
                     <h3 class="sub-title">AJAX</h3>
                     <div class="desc">
-                        <p>Подход к построению интерактивных пользовательских веб-приложений, заключающийся в «фоновом» обмене данными браузера с веб-сервером.</p>
+                        <p><?= $this->translate('Подход к построению интерактивных пользовательских веб-приложений, заключающийся в «фоновом» обмене данными браузера с веб-сервером.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -110,7 +110,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank" class="brand-logo html5"></a>
                     <h3 class="sub-title">HTML5</h3>
                     <div class="desc">
-                        <p>Язык разметки документов в интернете.</p>
+                        <p><?= $this->translate('Язык разметки документов в интернете.'); ?></p>
                     </div>
                 </div>
             </div><!--//item-->
@@ -119,7 +119,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" class="brand-logo css3"></a>
                     <h3 class="sub-title">CSS3</h3>
                     <div class="desc">
-                        <p>Язык, который используется для описания внешнего вида документа.</p>
+                        <p><?= $this->translate('Язык, который используется для описания внешнего вида документа.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -128,8 +128,8 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank" class="brand-logo bootstrap"></a>
                     <h3 class="sub-title">Bootstrap</h3>
                     <div class="desc">
-                        <p>Набор инструментов для создания сайтов и веб-приложений.
-                            Включает в себя: HTML и CSS шаблоны, оформления для типографики, веб-формы, кнопки, метки, блоки навигации и прочие компоненты веб-интерфейсов, включая JavaScript расширения.</p>
+                        <p><?= $this->translate('Набор инструментов для создания сайтов и веб-приложений.
+                            Включает в себя: HTML и CSS шаблоны, оформления для типографики, веб-формы, кнопки, метки, блоки навигации и прочие компоненты веб-интерфейсов, включая JavaScript расширения.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -138,7 +138,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/XML" target="_blank" class="brand-logo xml"></a>
                     <h3 class="sub-title">XML</h3>
                     <div class="desc">
-                        <p>eXtensible Markup Language — расширяемый язык разметки. Формат удобный для создания и обработки документов программами и одновременно удобный для чтения человеком.</p>
+                        <p>eXtensible Markup Language — <?= $this->translate('расширяемый язык разметки. Формат удобный для создания и обработки документов программами и одновременно удобный для чтения человеком.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -149,7 +149,7 @@ $this->headTitle($title);
                     <a href="#" target="_blank" class="brand-logo json"></a>
                     <h3 class="sub-title">JSON</h3>
                     <div class="desc">
-                        <p>Текстовый формат обмена данными, в настоящее время очень популярен в веб.</p>
+                        <p><?= $this->translate('Текстовый формат обмена данными, в настоящее время очень популярен в веб.'); ?></p>
                     </div>
                 </div>
             </div><!--//item-->
@@ -158,7 +158,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/JSON" target="_blank" class="brand-logo elasticsearch"></a>
                     <h3 class="sub-title">ElasticSearch</h3>
                     <div class="desc">
-                        <p>Поисковый сервер. Обеспечивает распределенный, высокоскоростной механизм полнотекстового поиска, веб-интерфейс и схему JSON документов.</p>
+                        <p><?= $this->translate('Поисковый сервер. Обеспечивает распределенный, высокоскоростной механизм полнотекстового поиска, веб-интерфейс и схему JSON документов.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -167,7 +167,7 @@ $this->headTitle($title);
                     <a href="http://gulpjs.com/" target="_blank" class="brand-logo gulp"></a>
                     <h3 class="sub-title">Gulp</h3>
                     <div class="desc">
-                        <p>Современный инструмент для автоматизация процесса разработки.</p>
+                        <p><?= $this->translate('Современный инструмент для автоматизация процесса разработки.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -176,7 +176,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/Git_(software)" target="_blank" class="brand-logo git"></a>
                     <h3 class="sub-title">Git</h3>
                     <div class="desc">
-                        <p>Система для управления версиями.</p>
+                        <p><?= $this->translate('Система для управления версиями.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -187,7 +187,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/Composer_(software)" target="_blank" class="brand-logo composer"></a>
                     <h3 class="sub-title">Composer</h3>
                     <div class="desc">
-                        <p>Пакетный менеджер уровня приложений для языка программирования PHP, который предоставляет средства по управлению зависимостями в PHP-приложении.</p>
+                        <p><?= $this->translate('Пакетный менеджер уровня приложений для языка программирования PHP, который предоставляет средства по управлению зависимостями в PHP-приложении.'); ?></p>
                     </div>
                 </div>
             </div><!--//item-->
@@ -196,7 +196,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/Npm_(software)" target="_blank" class="brand-logo npm"></a>
                     <h3 class="sub-title">NPM</h3>
                     <div class="desc">
-                        <p>Пакетный менеджер для языка JavaScript.</p>
+                        <p><?= $this->translate('Пакетный менеджер для языка'); ?> JavaScript.</p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -205,7 +205,7 @@ $this->headTitle($title);
                     <a href="http://bower.io/" target="_blank" class="brand-logo bower"></a>
                     <h3 class="sub-title">Bower</h3>
                     <div class="desc">
-                        <p>Система управления пакетами для программирования на стороне клиента.</p>
+                        <p><?= $this->translate('Система управления пакетами для программирования на стороне клиента.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -214,7 +214,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/Vagrant_(software)" target="_blank" class="brand-logo vagrant"></a>
                     <h3 class="sub-title">Vagrant</h3>
                     <div class="desc">
-                        <p>Программное обеспечение для создания и конфигурирования виртуальной среды разработки.</p>
+                        <p><?= $this->translate('Программное обеспечение для создания и конфигурирования виртуальной среды разработки.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -225,7 +225,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/Web_scraping" target="_blank" class="brand-logo web-scraper"></a>
                     <h3 class="sub-title">Web-scraping</h3>
                     <div class="desc">
-                        <p>Программное обеспечение для извлечения информации из веб-сайтов.</p>
+                        <p><?= $this->translate('Программное обеспечение для извлечения информации из веб-сайтов.'); ?></p>
                     </div>
                 </div>
             </div><!--//item-->
@@ -234,7 +234,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/PayPal" target="_blank" class="brand-logo paypal"></a>
                     <h3 class="sub-title">PayPal</h3>
                     <div class="desc">
-                        <p>Реализация PHP системы для работы с крупнейшей дебетовой электронная платежной системой.</p>
+                        <p><?= $this->translate('Реализация PHP системы для работы с крупнейшей дебетовой электронная платежной системой.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -243,7 +243,7 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/Doctrine_(PHP)" target="_blank" class="brand-logo doctrine"></a>
                     <h3 class="sub-title">Doctrine</h3>
                     <div class="desc">
-                        <p>Объектно-реляционный проектор (ORM) для PHP. Одной из ключевых возможностей Doctrine является запись запросов к БД на собственном объектно-ориентированном диалекте SQL.</p>
+                        <p><?= $this->translate('Объектно-реляционный проектор (ORM) для PHP. Одной из ключевых возможностей Doctrine является запись запросов к БД на собственном объектно-ориентированном диалекте SQL.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -252,29 +252,29 @@ $this->headTitle($title);
                     <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" class="brand-logo rest"></a>
                     <h3 class="sub-title">REST</h3>
                     <div class="desc">
-                        <p>Representational State Transfer. Метод взаимодействия компонентов распределенного приложения в сети Интернет.</p>
+                        <p>Representational State Transfer. <?= $this->translate('Метод взаимодействия компонентов распределенного приложения в сети Интернет.'); ?></p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
         </div><!--//row-->
-        <a class="btn btn-cta btn-cta-secondary" href="<?= $this->url('about'); ?>">Больше о нас</a>
+        <a class="btn btn-cta btn-cta-secondary" href="<?= $this->url('about'); ?>"><?= $this->translate('Больше о нас'); ?></a>
     </div><!--//container-->
 </section><!--//who-->
 
 <!-- ******CTA Section****** -->
 <section id="cta-section" class="cta-section section text-center home-cta-section">
     <div class="container">
-        <h2 class="title">Хотите быстро связаться с нами?</h2>
+        <h2 class="title"><?= $this->translate('Хотите быстро связаться с нами?'); ?></h2>
         <p class="phone contact-info">
-            <span>Вы в одном телефонном звонке от этого</span>
+            <span><?= $this->translate('Вы в одном телефонном звонке от этого'); ?></span>
             <span class="info"><a href="tel:+380675623777">0675623777</a></span>
         </p><!--//phone-->
         <p class="email contact-info">
-            <span class="intro">Вы так же можете отправить email</span>
+            <span class="intro"><?= $this->translate('Вы так же можете отправить email'); ?></span>
             <span class="info"><a href="mailto:versoverteam@gmail.com">versoverteam@gmail.com</a></span>
         </p><!--//phone-->
         <p class="skype contact-info">
-            <span class="intro">Или Skype</span>
+            <span class="intro"><?= $this->translate('Или Skype'); ?></span>
             <span class="info"><a href="skype:versover?chat">Versover</a></span>
         </p><!--//skype-->
     </div><!--//container-->
@@ -286,8 +286,8 @@ $this->headTitle($title);
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 id="contactModalLabel" class="modal-title text-center">Начните проект сегодня</h4>
-                <p class="intro text-center">Если у вас есть предложение, вопрос - смело пишите нам - мы ответим Вам в ближайшее время!</p>
+                <h4 id="contactModalLabel" class="modal-title text-center"><?= $this->translate('Начните проект сегодня'); ?></h4>
+                <p class="intro text-center"><?= $this->translate('Если у вас есть предложение, вопрос - смело пишите нам - мы ответим Вам в ближайшее время!'); ?></p>
             </div>
             <div class="modal-body">
                 <ul class="contact-info list-inline text-center">
@@ -300,23 +300,23 @@ $this->headTitle($title);
                         <div class="contact-form-inner">
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                    <label class="sr-only" for="cname">Ваше имя</label>
-                                    <input type="text" class="form-control" id="cname" name="name" placeholder="Ваше имя" minlength="2" required>
+                                    <label class="sr-only" for="cname"><?= $this->translate('Ваше имя'); ?></label>
+                                    <input type="text" class="form-control" id="cname" name="name" placeholder="<?= $this->translate('Ваше имя'); ?>" minlength="2" required>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                    <label class="sr-only" for="cemail">Ваш email</label>
-                                    <input type="email" class="form-control" id="cemail" name="email" placeholder="Ваш email" required>
+                                    <label class="sr-only" for="cemail"><?= $this->translate('Ваш email'); ?></label>
+                                    <input type="email" class="form-control" id="cemail" name="email" placeholder="<?= $this->translate('Ваш email'); ?>" required>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                                    <label class="sr-only" for="csubject">Тема</label>
-                                    <input type="text" class="form-control" id="csubject" name="subject" placeholder="Тема" required>
+                                    <label class="sr-only" for="csubject"><?= $this->translate('Тема'); ?></label>
+                                    <input type="text" class="form-control" id="csubject" name="subject" placeholder="<?= $this->translate('Тема'); ?>" required>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                                    <label class="sr-only" for="cmessage">Ваше сообщение</label>
-                                    <textarea class="form-control" id="cmessage" name="message" placeholder="Ваше сообщение" rows="12" required></textarea>
+                                    <label class="sr-only" for="cmessage"><?= $this->translate('Ваше сообщение'); ?></label>
+                                    <textarea class="form-control" id="cmessage" name="message" placeholder="<?= $this->translate('Ваше сообщение'); ?>" rows="12" required></textarea>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                                    <button type="submit" class="btn btn-block btn-cta btn-cta-primary sbm-btn">Отправить сообщение</button>
+                                    <button type="submit" class="btn btn-block btn-cta btn-cta-primary sbm-btn"><?= $this->translate('Отправить сообщение'); ?></button>
                                 </div>
                             </div><!--//row-->
                         </div>

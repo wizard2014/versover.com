@@ -1,15 +1,15 @@
 <?php
-$title = 'О нас';
+$title = $this->translate('О нас');
 $this->headTitle($title);
 ?>
 <div class="replace hide">
     <section class="promo section">
         <div class="container text-center">
-            <h2 class="title">О нас</h2>
+            <h2 class="title"><?= $this->translate('О нас'); ?></h2>
             <div class="intro">
-                <p>Ваша идея требует <span class="highlight">нестандартных решений?</span></p>
-                <p>Вашему бизнесу не подходят <span class="highlight">существующие CMS?</span></p>
-                <p>Мы разработаем web-приложение, от которого вы <span class="highlight">не сможете отказаться!</span></p>
+                <p><?= $this->translate('Ваша идея требует <span class="highlight">нестандартных решений?'); ?></span></p>
+                <p><?= $this->translate('Вашему бизнесу не подходят <span class="highlight">существующие CMS?'); ?></span></p>
+                <p><?= $this->translate('Мы разработаем web-приложение, от которого вы <span class="highlight">не сможете отказаться!'); ?></span></p>
             </div>
         </div><!--//container-->
     </section><!--//promo-->
@@ -18,15 +18,15 @@ $this->headTitle($title);
 <!-- ******Services Section****** -->
 <section id="services" class="services section">
     <div class="container text-center">
-        <h2 class="title">Услуги</h2>
+        <h2 class="title"><?= $this->translate('Услуги'); ?></h2>
         <div class="intro">
-            <p>Мы предлагаем систему в которой:</p>
+            <p><?= $this->translate('Мы предлагаем систему в которой:'); ?></p>
             <ul class="text-left">
-                <li><span class="highlight">архитектура и функциональность</span> приложения разработана индивидуально для вас;</li>
-                <li><span class="highlight">логика приложения</span> согласована с вашими бизнес-процессами;</li>
-                <li><span class="highlight">структура базы данных</span> соответствует вашим требованиям;</li>
-                <li><span class="highlight">корректное отображение</span> сайта на различных устройствах;</li>
-                <li><span class="highlight">высоконагруженность и безопасность</span>.</li>
+                <li><span class="highlight"><?= $this->translate('архитектура и функциональность</span> приложения разработана индивидуально для вас'); ?>;</li>
+                <li><span class="highlight"><?= $this->translate('логика приложения</span> согласована с вашими бизнес-процессами'); ?>;</li>
+                <li><span class="highlight"><?= $this->translate('структура базы данных</span> соответствует вашим требованиям'); ?>;</li>
+                <li><span class="highlight"><?= $this->translate('корректное отображение</span> сайта на различных устройствах'); ?>;</li>
+                <li><span class="highlight"><?= $this->translate('высоконагруженность и безопасность'); ?></span>.</li>
             </ul>
         </div>
         <div class="service-items row">
@@ -38,10 +38,10 @@ $this->headTitle($title);
                     <div class="desc">
                         <h3 class="sub-title">UX &amp; Frontend</h3>
                         <p>
-                            Мы используем современные инструменты для создания визуальной части веб-приложений.
+                            <?= $this->translate('Мы используем современные инструменты для создания визуальной части веб-приложений.
                             Отзывчивый веб-дизайн (RWD) есть подход к веб-дизайну, направленный на разработку сайтов,
                             которые обеспечивают оптимальный режим просмотра и взаимодействия с пользователем - легко читать,
-                            удобная навигация, подходит для широкого диапазона устройств (от настольного компьютера до мобильного телефона).
+                            удобная навигация, подходит для широкого диапазона устройств (от настольного компьютера до мобильного телефона).'); ?>
                         </p>
                     </div>
                 </div><!--//item-inner-->
@@ -54,10 +54,11 @@ $this->headTitle($title);
                     <div class="desc">
                         <h3 class="sub-title">Backend</h3>
                         <p>
-                            Основной упор в качестве серверной технологии мы делаем на язык PHP.
+                            <?= $this->translate('Основной упор в качестве серверной технологии мы делаем на язык PHP.
                             Мощный, современный инструмент для создания динамических веб приложений.
                             Для обеспечения высокой производительности и продуктивности - используем решение на базе современного фреймворка, Zend Framework.
-                            Обеспечивающий высокую производительность, надежность и богатые функциональные возможности.
+                            Обеспечивающий высокую производительность, надежность и богатые функциональные возможности.'); ?>
+
                         </p>
                     </div>
                 </div><!--//item-inner-->
@@ -70,9 +71,9 @@ $this->headTitle($title);
                     <div class="desc">
                         <h3 class="sub-title">Database</h3>
                         <p>
-                            Используем широкий набор систем управления баз данных, выбирая исходя из поставленных задач.
+                            <?= $this->translate('Используем широкий набор систем управления баз данных, выбирая исходя из поставленных задач.
                             Способные быстро и эффективно решать одну из основных задач - хранения ваших данных.
-                            Все используемые системы прошли пробу временем и хорошо себя зарекомендовали. Можете быть уверены, ваши данные буду в надежных "руках".
+                            Все используемые системы прошли пробу временем и хорошо себя зарекомендовали. Можете быть уверены, ваши данные буду в надежных "руках".'); ?>
                         </p>
                     </div>
                 </div><!--//item-inner-->
@@ -85,33 +86,33 @@ $this->headTitle($title);
                     <div class="desc">
                         <h3 class="sub-title">Support</h3>
                         <p>
-                            Покажем, расскажем, напишем, научим.
+                            <?= $this->translate('Покажем, расскажем, напишем, научим.
                             Не ленимся разложить все по полкам, объяснить и расписать все тонкости работы системы.
                             При желании модернизируем, подправим... При сложной системе, уделим достаточно внимания тому, чтобы Вам все было предельно ясно.
-                            Ответим на любые ваши вопросы.
+                            Ответим на любые ваши вопросы.'); ?>
                         </p>
                     </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
         </div><!--//row-->
-        <a class="btn btn-cta btn-cta-primary" href="<?= $this->url('contact'); ?>">Связаться</a>
+        <a class="btn btn-cta btn-cta-primary" href="<?= $this->url('contact'); ?>"><?= $this->translate('Связаться'); ?></a>
     </div><!--//container-->
 </section>
 
 <!-- ******CTA Section****** -->
 <section id="cta-section" class="cta-section section text-center home-cta-section">
     <div class="container">
-        <h2 class="title">Хотите быстро связаться с нами?</h2>
+        <h2 class="title"><?= $this->translate('Хотите быстро связаться с нами?'); ?></h2>
         <p class="phone contact-info">
-            <span>Вы в одном телефонном звонке от этого</span>
+            <span><?= $this->translate('Вы в одном телефонном звонке от этого'); ?></span>
             <span class="info"><a href="tel:+380675623777">0675623777</a></span>
         </p><!--//phone-->
         <p class="email contact-info">
-            <span class="intro">Вы так же можете отправить email</span>
+            <span class="intro"><?= $this->translate('Вы так же можете отправить email'); ?></span>
             <span class="info"><a href="mailto:versoverteam@gmail.com">versoverteam@gmail.com</a></span>
         </p><!--//phone-->
         <p class="skype contact-info">
-            <span class="intro">Или Skype</span>
+            <span class="intro"><?= $this->translate('Или Skype'); ?></span>
             <span class="info"><a href="skype:versover?chat">Versover</a></span>
         </p><!--//skype-->
     </div><!--//container-->
