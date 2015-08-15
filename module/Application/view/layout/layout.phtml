@@ -58,7 +58,8 @@
             <script>
                 var path    = location.href.split('/').pop(),
                     place   = document.querySelector('.header-wrapper'),
-                    replace = document.querySelector('.replace');
+                    replace = document.querySelector('.replace'),
+                    error   = false;
                 switch (path) {
                     case 'work':
                         place.classList.add('header-wrapper-work');
@@ -72,10 +73,16 @@
                     case 'contact':
                         place.classList.add('header-wrapper-contact');
                         break;
-                    default:
+                    case '':
+                    case 'application':
                         place.classList.add('header-wrapper-home');
+                        break;
+                    default:
+                        error = !error;
                 }
-                place.appendChild(replace).classList.remove('hide');
+                if (!error) {
+                    place.appendChild(replace).classList.remove('hide');
+                }
             </script>
 
             <!-- ******FOOTER****** -->

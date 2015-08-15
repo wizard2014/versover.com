@@ -6,5 +6,4 @@ return [
     'Application\Controller\BlogController'    => __DIR__ . '/src/Application/Controller/BlogController.php',
     'Application\Controller\ContactController' => __DIR__ . '/src/Application/Controller/ContactController.php',
     'Application\Controller\IndexController'   => __DIR__ . '/src/Application/Controller/IndexController.php',
-    'Application\Controller\WorkController'    => __DIR__ . '/src/Application/Controller/WorkController.php',
 ];
