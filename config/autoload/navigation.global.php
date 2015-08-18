@@ -3,23 +3,25 @@
  * Global navigation config
  */
 
+$translator = new \Zend\I18n\Translator\Translator;
+
 return [
     'navigation' => [
         'default' => [
             [
-                'label' => 'Главная',
+                'label' => $translator->translate('Главная'),
                 'route' => 'home',
                 'class' => 'nav-item'
             ], [
-                'label' => 'О нас',
+                'label' => $translator->translate('О нас'),
                 'route' => 'about',
                 'class' => 'nav-item'
             ], [
-                'label' => 'Blog',
+                'label' => $translator->translate('Blog'),
                 'route' => 'blog',
                 'class' => 'nav-item hide'
             ], [
-                'label' => 'Контакты',
+                'label' => $translator->translate('Контакты'),
                 'route' => 'contact',
                 'class' => 'nav-item'
             ]
