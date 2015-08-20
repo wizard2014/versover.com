@@ -9,11 +9,11 @@ return [
     'navigation' => [
         'default' => [
             [
-                'label' => $translator->translate('Главная'),
+                'label' => $translator->translate('Home'),
                 'route' => 'home',
                 'class' => 'nav-item'
             ], [
-                'label' => $translator->translate('О нас'),
+                'label' => $translator->translate('About'),
                 'route' => 'about',
                 'class' => 'nav-item'
             ], [
@@ -21,7 +21,7 @@ return [
                 'route' => 'blog',
                 'class' => 'nav-item hide'
             ], [
-                'label' => $translator->translate('Контакты'),
+                'label' => $translator->translate('Contacts'),
                 'route' => 'contact',
                 'class' => 'nav-item'
             ]
