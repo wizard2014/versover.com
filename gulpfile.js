@@ -50,6 +50,7 @@ gulp.task('scripts', function() {
         paths.assets  + '/scripts/form-mobile-fix.js',
         paths.assets  + '/scripts/owl-custom.js',
         paths.assets  + '/scripts/mail.js',
+        paths.assets  + '/scripts/lang-switch.js',
         paths.assets  + '/scripts/main.js'
     ])
         .pipe(concat('app.js'))

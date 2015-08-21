@@ -4,71 +4,49 @@ return [
     'router' => [
         'routes' => [
             'home' => [
-                'type' => 'Literal',
+                'type' => 'Segment',
                 'options' => [
-                    'route'    => '/',
+                    'route'    => '/[:lang]',
                     'defaults' => [
                         'controller' => 'Application\Controller\Index',
                         'action'     => 'index',
-                    ],
-                ],
-            ],
-            'application' => [
-                'type'    => 'Literal',
-                'options' => [
-                    'route'    => '/application',
-                    'defaults' => [
-                        '__NAMESPACE__' => 'Application\Controller',
-                        'controller'    => 'Index',
-                        'action'        => 'index',
-                    ],
-                ],
-                'may_terminate' => true,
-                'child_routes' => [
-                    'default' => [
-                        'type'    => 'Segment',
-                        'options' => [
-                            'route'    => '/[:controller[/:action]]',
-                            'constraints' => [
-                                'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                                'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
-                            ],
-                            'defaults' => [
-                            ],
-                        ],
+                        'lang'       => '',
                     ],
                 ],
             ],
             'about' => [
-                'type' => 'Literal',
+                'type' => 'Segment',
                 'options' => [
-                    'route'    => '/about',
+                    'route'    => '[/:lang]/about',
                     'defaults' => [
                         'controller' => 'Application\Controller\About',
                         'action'     => 'index',
+                        'lang'       => '',
                     ],
                 ],
             ],
             'blog' => [
-                'type' => 'Literal',
+                'type' => 'Segment',
                 'options' => [
-                    'route'    => '/blog',
+                    'route'    => '[/:lang]/blog',
                     'defaults' => [
                         'controller' => 'Application\Controller\Blog',
                         'action'     => 'index',
+                        'lang'       => '',
                     ],
                 ],
             ],
             'contact' => [
                 'type' => 'Segment',
                 'options' => [
-                    'route' => '/contact[/:action]',
+                    'route' => '[/:lang]/contact[/:action]',
                     'constraints' => [
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                     ],
                     'defaults' => [
                         'controller' => 'Application\Controller\Contact',
                         'action'     => 'index',
+                        'lang'       => '',
                     ],
                 ],
             ],
