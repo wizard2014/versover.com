@@ -5,10 +5,10 @@ $this->headTitle($title);
 <div class="replace hide">
     <section class="promo section">
         <div class="container text-center">
-            <h2 class="title"><?= $this->translate('Contact Us'); ?></h2>
+            <h2 class="title"><?php $this->translate('Contact Us'); ?></h2>
             <div>
-                <p><?= $this->translate('Always in touch!'); ?></p>
-                <p><?= $this->translate('If you are interested in the project or want to know more about our services. <span class="highlight">We\'ll be glad to you!'); ?></span></p>
+                <p><?php $this->translate('Always in touch!'); ?></p>
+                <p><?php $this->translate('If you are interested in the project or want to know more about our services. <span class="highlight">We\'ll be glad to you!'); ?></span></p>
             </div>
         </div><!--//container-->
     </section><!--//promo-->
@@ -17,35 +17,35 @@ $this->headTitle($title);
 <!-- ******Contact Section****** -->
 <section class="contact-section section">
     <div class="container">
-        <h2 class="title text-center"><?= $this->translate('Start your project today'); ?></h2>
-        <p class="intro text-center"><?= $this->translate('If you have suggestions, questions - feel free to write us - we will reply to you shortly!'); ?></p>
+        <h2 class="title text-center"><?php $this->translate('Start your project today'); ?></h2>
+        <p class="intro text-center"><?php $this->translate('If you have suggestions, questions - feel free to write us - we will reply to you shortly!'); ?></p>
         <ul class="contact-info list-inline text-center">
             <li class="tel"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><br /> <a href="tel:+380675623777">0675623777</a></li>
             <li class="email"><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><br /> <a href="mailto:versoverteam@gmail.com">versoverteam@gmail.com</a></li>
             <li class="skype-icon"><span class="fs1" aria-hidden="true" data-icon="&#xe0a2;"></span><br /> <a href="skype:versover?chat">Versover</a></li>
         </ul>
-        <form id="contact-form" class="contact-form form" method="post" action="<?= $this->url('contact', ['action' => 'send']); ?>">
+        <form id="contact-form" class="contact-form form" method="post" action="<?php $this->url('contact', ['action' => 'send']); ?>">
             <div class="row text-center">
                 <div class="contact-form-inner col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                            <label class="sr-only" for="cname"><?= $this->translate('Name'); ?></label>
-                            <input type="text" class="form-control" id="cname" name="name" placeholder="<?= $this->translate('Name'); ?>" minlength="2" required>
+                            <label class="sr-only" for="cname"><?php $this->translate('Name'); ?></label>
+                            <input type="text" class="form-control" id="cname" name="name" placeholder="<?php $this->translate('Name'); ?>" minlength="2" required>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                            <label class="sr-only" for="cemail"><?= $this->translate('Email'); ?></label>
-                            <input type="email" class="form-control" id="cemail" name="email" placeholder="<?= $this->translate('Email'); ?>" required>
+                            <label class="sr-only" for="cemail"><?php $this->translate('Email'); ?></label>
+                            <input type="email" class="form-control" id="cemail" name="email" placeholder="<?php $this->translate('Email'); ?>" required>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                            <label class="sr-only" for="csubject"><?= $this->translate('Subject'); ?></label>
-                            <input type="text" class="form-control" id="csubject" name="subject" placeholder="<?= $this->translate('Subject'); ?>" required>
+                            <label class="sr-only" for="csubject"><?php $this->translate('Subject'); ?></label>
+                            <input type="text" class="form-control" id="csubject" name="subject" placeholder="<?php $this->translate('Subject'); ?>" required>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                            <label class="sr-only" for="cmessage"><?= $this->translate('Message'); ?></label>
-                            <textarea class="form-control" id="cmessage" name="message" placeholder="<?= $this->translate('Message'); ?>" rows="12" required></textarea>
+                            <label class="sr-only" for="cmessage"><?php $this->translate('Message'); ?></label>
+                            <textarea class="form-control" id="cmessage" name="message" placeholder="<?php $this->translate('Message'); ?>" rows="12" required></textarea>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                            <button type="submit" class="btn btn-block btn-cta btn-cta-primary sbm-btn"><?= $this->translate('Send'); ?></button>
+                            <button type="submit" class="btn btn-block btn-cta btn-cta-primary sbm-btn"><?php $this->translate('Send'); ?></button>
                         </div>
                     </div><!--//row-->
                 </div>

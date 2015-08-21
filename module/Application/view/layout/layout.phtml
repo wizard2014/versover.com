@@ -34,7 +34,7 @@
                 <header id="header" class="header navbar-fixed-top">
                     <div class="container">
                         <h1 class="logo">
-                            <a href="<?= $this->url('home'); ?>"><span class="highlight">V</span>ersover</a>
+                            <a href="<?php echo $this->url('home'); ?>"><span class="highlight">V</span>ersover</a>
                         </h1><!--//logo-->
                         <nav class="main-nav navbar-right" role="navigation">
                             <div class="navbar-header">
@@ -46,7 +46,7 @@
                                 </button><!--//nav-toggle-->
                             </div><!--//navbar-header-->
                             <div id="navbar-collapse" class="navbar-collapse collapse">
-                                <?= $this->navigation('navigation')->menu()->setULClass('nav navbar-nav'); ?><!--//nav-->
+                                <?php echo $this->navigation('navigation')->menu()->setULClass('nav navbar-nav'); ?><!--//nav-->
                             </div><!--//navabr-collapse-->
                         </nav><!--//main-nav-->
                     </div><!--//container-->
@@ -92,18 +92,18 @@
                         <div class="row">
                             <div class="footer-col col-xs-3 col-sm-offset-3 col-xs-offset-1 links-col">
                                 <div class="footer-col-inner">
-                                    <h3 class="sub-title"><?= $this->translate('Quick Links'); ?></h3>
+                                    <h3 class="sub-title"><?php echo $this->translate('Quick Links'); ?></h3>
                                     <ul class="list-unstyled">
-                                        <li><a href="<?= $this->url('home'); ?>"><?= $this->translate('Home'); ?></a></li>
-                                        <li><a href="<?= $this->url('about'); ?>"><?= $this->translate('About'); ?></a></li>
-                                        <li><a href="<?= $this->url('contact'); ?>"><?= $this->translate('Contacts'); ?></a></li>
-                                        <li class="hide"><a href="<?= $this->url('blog'); ?>"><?= $this->translate('Blog'); ?></a></li>
+                                        <li><a href="<?php echo $this->url('home'); ?>"><?php echo $this->translate('Home'); ?></a></li>
+                                        <li><a href="<?php echo $this->url('about'); ?>"><?php echo $this->translate('About'); ?></a></li>
+                                        <li><a href="<?php echo $this->url('contact'); ?>"><?php echo $this->translate('Contacts'); ?></a></li>
+                                        <li class="hide"><a href="<?php echo $this->url('blog'); ?>"><?php echo $this->translate('Blog'); ?></a></li>
                                     </ul>
                                 </div><!--//footer-col-inner-->
                             </div><!--//foooter-col-->
                             <div class="footer-col col-xs-3 contact-col">
                                 <div class="footer-col-inner">
-                                    <h3 class="sub-title"><?= $this->translate('Get In Touch'); ?></h3>
+                                    <h3 class="sub-title"><?php echo $this->translate('Get In Touch'); ?></h3>
                                     <div class="row">
                                         <p><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><a href="tel:+380675623777">0675623777</a></p>
                                         <p><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><a href="mailto:versoverteam@gmail.com">versoverteam@gmail.com</a></p>
@@ -116,7 +116,7 @@
                 </div><!--//footer-content-->
                 <div class="bottom-bar">
                     <div class="container center">
-                        <small class="copyright text-center">&copy; <a href="<?= $this->url('home'); ?>">Versover</a> <?= date('Y'); ?></small>
+                        <small class="copyright text-center">&copy; <a href="<?php echo $this->url('home'); ?>">Versover</a> <?php echo date('Y'); ?></small>
                     </div><!--//container-->
                 </div><!--//bottom-bar-->
             </footer><!--//footer-->
