@@ -7,9 +7,9 @@ $this->headTitle($title);
         <div class="container text-center">
             <h2 class="title"><?php echo $this->translate('About'); ?></h2>
             <div class="intro">
-                <p><?php echo $this->translate('Need <span class="highlight">out-of-the-box</span> solutions for your idea? Ваша идея требует нестандартных решений?'); ?></p>
-                <p><?php echo $this->translate('<span class="highlight">Available CMS</span> doesn’t match your business? Вашему бизнесу не подходят существующие CMS?'); ?></p>
-                <p><?php echo $this->translate('We’re gonna develop Web application you <span class="highlight">can’t refuse</span>.'); ?></p>
+                <p><?php echo sprintf($this->translate('Need %sout-of-the-box%s solutions for your idea?'), '<span class="highlight">', '</span>'); ?></p>
+                <p><?php echo sprintf($this->translate('%sAvailable CMS%s doesn’t match your business?'), '<span class="highlight">', '</span>'); ?></p>
+                <p><?php echo sprintf($this->translate('We’re gonna develop Web application you %scan’t refuse%s'), '<span class="highlight">', '</span>'); ?>.</p>
             </div>
         </div><!--//container-->
     </section><!--//promo-->
@@ -22,10 +22,10 @@ $this->headTitle($title);
         <div class="intro">
             <p><?php echo $this->translate('We propose a system in which:'); ?></p>
             <ul class="text-left">
-                <li><span class="highlight"><?php echo $this->translate('application\'s functionality</span> and architecture are individually designed'); ?>;</li>
-                <li><span class="highlight"><?php echo $this->translate('application logic suits your business process</span>'); ?>;</li>
-                <li><span class="highlight"><?php echo $this->translate('database structure</span> fits your requirement'); ?>;</li>
-                <li><span class="highlight"><?php echo $this->translate('correct website displaying</span> on different devices'); ?>;</li>
+                <li><?php echo sprintf($this->translate("%sapplication's functionality%s and architecture are individually designed"), '<span class="highlight">', '</span>'); ?>;</li>
+                <li><?php echo sprintf($this->translate('%sapplication logic%s suits your business process'), '<span class="highlight">', '</span>'); ?>;</li>
+                <li><?php echo sprintf($this->translate('%sdatabase structure%s fits your requirement'), '<span class="highlight">', '</span>'); ?>;</li>
+                <li><?php echo sprintf($this->translate('%scorrect website displaying%s on different devices'), '<span class="highlight">', '</span>'); ?>;</li>
                 <li><span class="highlight"><?php echo $this->translate('highload and safety'); ?></span>.</li>
             </ul>
         </div>
@@ -52,7 +52,6 @@ $this->headTitle($title);
                         <h3 class="sub-title">Backend</h3>
                         <p>
                             <?php echo $this->translate('We place the main emphasis of the server technology on the PHP. It’s the powerful modern tool for creating of dynamic Web applications. To ensure high performance and productivity we use solution on the basis of modern framework Zend Framework that provides high performance, reliability and offers powerful functional capabilities.'); ?>
-
                         </p>
                     </div>
                 </div><!--//item-inner-->
