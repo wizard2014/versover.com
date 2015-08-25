@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Versover\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-21 14:45+0300\n"
-"PO-Revision-Date: 2015-08-21 14:52+0300\n"
+"PO-Revision-Date: 2015-08-25 11:05+0300\n"
 "Last-Translator: wizard2014 <wizard2014@ya.ru>\n"
 "Language-Team: Versover Team <versoverteam@gmail.com>\n"
 "Language: en_US\n"
@@ -241,7 +241,7 @@ msgstr "Вашему бизнесу не подходят %sсуществующ
 
 #: ../view/application/about/index.phtml:12
 msgid "We’re gonna develop Web application you %scan’t refuse%s"
-msgstr "Мы разработаем web-приложение, от которого вы %sне сможете отказаться!%s"
+msgstr "Мы разработаем web-приложение, от которого вы %sне сможете отказаться%s"
 
 #: ../view/application/about/index.phtml:21
 msgid "Services"
