@@ -24,6 +24,7 @@
         versover.prop('href', versover.prop('href') + 'ru');
 
         setHtmlLang('ru');
+        setRuBtn();
     } else {
         $('.en').addClass('active');
 
@@ -40,6 +41,7 @@
         if (data == 'ru') {
             setRuLang(href, data);
             setHtmlLang('ru');
+            setRuBtn();
         } else if (data == 'en') {
             setEnLang(href);
             setHtmlLang('en');
@@ -61,6 +63,16 @@
             window.location = '/' + data + href;
         } else {
             window.location = data + href.substr(1);
+        }
+    }
+
+    function setRuBtn() {
+        var btn  = $('a.btn');
+
+        if (btn.length > 0) {
+            var href = btn.prop('href').split('/').pop();
+
+            btn.prop('href', '/ru/' + href);
         }
     }
 
