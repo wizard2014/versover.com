@@ -22,10 +22,14 @@
 
         var versover = $('.versover');
         versover.prop('href', versover.prop('href') + 'ru');
+
+        setHtmlLang('ru');
     } else {
         $('.en').addClass('active');
 
         $('.phone-hide').addClass('hide');
+
+        setHtmlLang('en');
     }
 
     switcher.find('.lang').on('click', function() {
@@ -35,8 +39,10 @@
 
         if (data == 'ru') {
             setRuLang(href, data);
+            setHtmlLang('ru');
         } else if (data == 'en') {
             setEnLang(href);
+            setHtmlLang('en');
         }
     });
 
@@ -51,12 +57,14 @@
     }
 
     function setRuLang(href, data) {
-        localStorage.setItem('lang', 'ru');
-
         if (href != '/') {
             window.location = '/' + data + href;
         } else {
             window.location = data + href.substr(1);
         }
+    }
+
+    function setHtmlLang(lang) {
+        $('html').prop('lang', lang);
     }
 })();
