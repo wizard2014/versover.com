@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Versover\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-21 14:45+0300\n"
-"PO-Revision-Date: 2015-08-25 11:05+0300\n"
+"PO-Revision-Date: 2015-08-25 12:08+0300\n"
 "Last-Translator: wizard2014 <wizard2014@ya.ru>\n"
 "Language-Team: Versover Team <versoverteam@gmail.com>\n"
 "Language: en_US\n"
@@ -154,7 +154,7 @@ msgstr "Программное обеспечение для извлечени�
 
 #: ../view/application/index/index.phtml:236
 msgid "Implementing PHP system to work with the largest debit electronic payment system."
-msgstr "Реализация PHP системы для работы с крупнейшей дебетовой электронная платежной системой."
+msgstr "Реализация PHP системы для работы с крупнейшей дебетовой электронной платежной системой."
 
 #: ../view/application/index/index.phtml:245
 msgid "Is a set of PHP libraries primarily focused on providing persistence services and related functionality. Its prize projects are an object-relational mapper (ORM) and the database abstraction layer it is built on top of."
