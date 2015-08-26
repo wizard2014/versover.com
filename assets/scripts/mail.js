@@ -15,7 +15,7 @@ $('.contact-form').on('submit', function(e) {
 
     $.ajax({
         type: 'POST',
-        url: '/contact/send',
+        url: url,
         data: { name: name, email: email, subject: subject, message: message },
 
         beforeSend: function() {
