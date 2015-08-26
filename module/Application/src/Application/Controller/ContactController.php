@@ -10,11 +10,12 @@ use MailMan\Message;
 
 class ContactController extends AbstractActionController
 {
+    protected $translator;
+
     public function indexAction()
     {
         return new ViewModel();
     }
-
 
     public function sendAction()
     {
@@ -53,18 +54,27 @@ class ContactController extends AbstractActionController
 
         if (!empty($data['email']) && !empty($data['name']) && !empty($data['message']) && !empty($data['subject'])) {
             if (filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-                array_walk($data, function(&$item) {
+                array_walk($data, function (&$item) {
                     $item = strip_tags($item);
                 });
 
-                $result['success'] = 'Ваше письмо отправлено. Мы свяжемся с вами в ближайшее время.';
+                $result['success'] = $this->getTranslator()->translate('Your mail was sent. We will contact you soon.');
             } else {
-                $result['error'] = 'Некорректный email адрес.';
+                $result['error'] = $this->getTranslator()->translate('Invalid email.');
             }
         } else {
-            $result['error'] = 'Все поля обязательны для заполнения.';
+            $result['error'] = $this->getTranslator()->translate('All fields are required.');
         }
 
         return $result;
+    }
+
+    public function getTranslator()
+    {
+        if (null === $this->translator) {
+            $this->translator = $this->getServiceLocator()->get('translator');
+        }
+
+        return $this->translator;
     }
 }

@@ -2,6 +2,8 @@
 $('.contact-form').on('submit', function(e) {
     e.preventDefault();
 
+    var url = getUrl();
+
     var name    = $.trim($('#cname').val()),
         email   = $.trim($('#cemail').val()),
         message = $.trim($('#cmessage').val()),
@@ -34,7 +36,7 @@ $('.contact-form').on('submit', function(e) {
             $('body').append(html);
         })
         .fail(function() {
-            html += '<div class="email-message email-message-error" title="Нажмите чтобы закрыть"><h2 class="text-center">Что-то пошло не так, повторите попытку позже.<h2></div>';
+            html += '<div class="email-message email-message-error" title="Нажмите чтобы закрыть"><h2 class="text-center">Something went wrong. Please try again later.<h2></div>';
         })
         .always(function() {
             var messenger   = $('.email-message'),
@@ -63,3 +65,13 @@ $('.contact-form').on('submit', function(e) {
             }
         });
 });
+
+function getUrl() {
+    var lang = window.location.pathname.split('/')[1];
+
+    if (lang == 'ru') {
+        return '/ru/contact/send';
+    }
+
+    return '/contact/send';
+}

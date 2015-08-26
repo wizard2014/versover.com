@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Versover\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-21 14:45+0300\n"
-"PO-Revision-Date: 2015-08-25 12:08+0300\n"
+"PO-Revision-Date: 2015-08-26 12:03+0300\n"
 "Last-Translator: wizard2014 <wizard2014@ya.ru>\n"
 "Language-Team: Versover Team <versoverteam@gmail.com>\n"
 "Language: en_US\n"
@@ -302,3 +302,15 @@ msgstr "Всегда на связи!"
 #: ../view/application/contact/index.phtml:11
 msgid "If you have suggestions, questions - feel free to write us - %swe will reply to you shortly%s!"
 msgstr "Если у вас есть предложение, вопрос – смело пишите нам, %sмы ответим вам в ближайшее время%s!"
+
+#: ../src/Application/Controller/ContactController.php:63
+msgid "Your mail was sent. We will contact you soon."
+msgstr "Ваше письмо отправлено. Мы свяжемся с вами в ближайшее время."
+
+#: ../src/Application/Controller/ContactController.php:65
+msgid "Invalid email."
+msgstr "Некорректный email адрес."
+
+#: ../src/Application/Controller/ContactController.php:68
+msgid "All fields are required."
+msgstr "Все поля обязательны для заполнения."
