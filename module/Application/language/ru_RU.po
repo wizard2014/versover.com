@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Versover\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-21 14:45+0300\n"
-"PO-Revision-Date: 2015-08-26 12:03+0300\n"
+"PO-Revision-Date: 2015-08-28 16:05+0300\n"
 "Last-Translator: wizard2014 <wizard2014@ya.ru>\n"
 "Language-Team: Versover Team <versoverteam@gmail.com>\n"
 "Language: en_US\n"
@@ -66,7 +66,7 @@ msgstr "Кто мы"
 
 #: ../view/application/index/index.phtml:30
 msgid "web-developers with a full range of services, specializing in PHP and Zend Framework"
-msgstr "веб-разработчики с полным спектром услуг, специализирующаяся на PHP и Zend Framework"
+msgstr "веб-разработчики с полным спектром услуг, специализирующиеся на PHP и Zend Framework"
 
 #: ../view/application/index/index.phtml:37
 msgid "One of the leading language used to create dynamic web applications."
@@ -272,7 +272,7 @@ msgid "highload and safety"
 msgstr "высоконагруженность и безопасность"
 
 #: ../view/application/about/index.phtml:41
-msgid "We use modern tools to develop the visual part of web applications. Responsive Web Design (RWD) - is the approach to web design that is aimed at the development of sites that provide the optimal display/view mode and user interaction - easy to read, comfortable navigation, suitable for a wide variety of devices (from desktop to mobile phone)."
+msgid "We use modern tools to develop the visual part of web applications. Responsive Web Design (RWD) — is the approach to web design that is aimed at the development of sites that provide the optimal display/view mode and user interaction - easy to read, comfortable navigation, suitable for a wide variety of devices (from desktop to mobile phone)."
 msgstr "Мы используем современные инструменты для создания визуальной части веб-приложений. Отзывчивый веб-дизайн (RWD) – это подход к веб-дизайну, направленный на разработку сайтов, которые обеспечивают оптимальный режим просмотра и взаимодействия с пользователем – легко читать, удобная навигация, подходит для самых разных устройств (от настольного компьютера до мобильного телефона)."
 
 #: ../view/application/about/index.phtml:54
