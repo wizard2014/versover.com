@@ -24,11 +24,11 @@ $('.contact-form').on('submit', function(e) {
     })
         .done(function(data) {
             if (data.error === undefined) {
-                html += '<div class="email-message email-message-success" title="Нажмите чтобы закрыть"><h2 class="text-center">'  + data.success + '<h2></div>';
+                html += '<div class="email-message email-message-success" title="close"><h2 class="text-center">'  + data.success + '<h2></div>';
 
                 $('.close').trigger('click');
             } else {
-                html += '<div class="email-message email-message-error" title="Нажмите чтобы закрыть"><h2 class="text-center">'  + data.error + '<h2></div>';
+                html += '<div class="email-message email-message-error" title="close"><h2 class="text-center">'  + data.error + '<h2></div>';
 
                 error = true;
             }
@@ -36,7 +36,7 @@ $('.contact-form').on('submit', function(e) {
             $('body').append(html);
         })
         .fail(function() {
-            html += '<div class="email-message email-message-error" title="Нажмите чтобы закрыть"><h2 class="text-center">Something went wrong. Please try again later.<h2></div>';
+            html += '<div class="email-message email-message-error" title="close"><h2 class="text-center">Something went wrong. Please try again later.<h2></div>';
         })
         .always(function() {
             var messenger   = $('.email-message'),
