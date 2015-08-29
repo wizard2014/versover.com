@@ -17,29 +17,13 @@
         }
     });
 
-    if (window.location.pathname.split('/')[1] == 'ru') {
-        $('.ru').addClass('active');
-
-        var versover = $('.versover');
-        versover.prop('href', versover.prop('href') + 'ru');
-
-        setHtmlLang('ru');
-        setRuBtn();
-    } else {
-        $('.en').addClass('active');
-
-        $('.phone-hide').addClass('hide');
-
-        setHtmlLang('en');
-    }
-
     switcher.find('.lang').on('click', function() {
         var data = $(this).data('lang');
 
         var href = window.location.pathname;
 
         if (data == 'ru') {
-            setRuLang(href, data);
+            setRuLang(href);
             setHtmlLang('ru');
             setRuBtn();
         } else if (data == 'en') {
@@ -47,6 +31,22 @@
             setHtmlLang('en');
         }
     });
+
+    if (window.location.pathname.split('/')[1] == 'ru') {
+        $('.ru').addClass('active').off();
+
+        var versover = $('.versover');
+        versover.prop('href', versover.prop('href') + 'ru');
+
+        setHtmlLang('ru');
+        setRuBtn();
+    } else {
+        $('.en').addClass('active').off();
+
+        $('.phone-hide').addClass('hide');
+
+        setHtmlLang('en');
+    }
 
     function setEnLang(href) {
         var tmp = href.split('/').pop();
@@ -58,11 +58,11 @@
         }
     }
 
-    function setRuLang(href, data) {
+    function setRuLang(href) {
         if (href != '/') {
-            window.location = '/' + data + href;
+            window.location = '/ru' + href;
         } else {
-            window.location = data + href.substr(1);
+            window.location = 'ru' + href.substr(1);
         }
     }
 
