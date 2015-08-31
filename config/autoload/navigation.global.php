@@ -16,11 +16,11 @@ return [
                 'label' => $translator->translate('About'),
                 'route' => 'about',
                 'class' => 'nav-item',
-            ], [
+            ], /*[
                 'label' => $translator->translate('Blog'),
                 'route' => 'blog',
                 'class' => 'nav-item hide',
-            ], [
+            ],*/ [
                 'label' => $translator->translate('Contacts'),
                 'route' => 'contact',
                 'class' => 'nav-item',

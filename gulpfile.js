@@ -29,7 +29,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-    return gulp.src([
+    gulp.src([
         paths.bower   + '/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js',
         paths.bower   + '/jquery-placeholder/jquery.placeholder.js',
         paths.bower   + '/matchHeight/jquery.matchHeight.js',
@@ -56,6 +56,8 @@ gulp.task('scripts', function() {
         .pipe(concat('app.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./public/js'));
+
+    return gulp.src(paths.bower + '/loadcss/loadCSS.js').pipe(uglify()).pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('watch', function() {
