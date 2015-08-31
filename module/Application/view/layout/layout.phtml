@@ -8,17 +8,13 @@
         <?php echo $this->headMeta()
             ->appendName('viewport', 'width=device-width, initial-scale=1.0')
             ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+            ->appendName('keywords', 'PHP, Zend Framework, MySQL, PostgreSQL, SQLite, JavaScript, jQuery, AJAX, HTML5, CSS3, Bootstrap, XML, JSON, Elasticsearch, Gulp, Git, Composer, NPM, Bower, Vagrant, Web-scraping, Parser, PayPal, eBay, Doctrine, REST')
+            ->appendName('description', 'web-developers with a full range of services, specializing in PHP and Zend Framework')
         ?>
-
-        <!-- Scripts -->
-        <?php echo $this->headScript()
-            ->prependFile(('//oss.maxcdn.com/respond/1.4.2/respond.min.js'), 'text/javascript', ['conditional' => 'lt IE 9',])
-            ->prependFile(('//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'), 'text/javascript', ['conditional' => 'lt IE 9',])
-            ->prependFile($this->basePath('/js/loadCSS.js'))
-        ; ?>
 
         <!-- Le styles -->
         <script>
+            function loadCSS(e,n,t){"use strict";var o=window.document.createElement("link"),d=n||window.document.getElementsByTagName("script")[0],i=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",d.parentNode.insertBefore(o,d),o.onloadcssdefined=function(e){for(var n,t=0;t<i.length;t++)i[t].href&&i[t].href===o.href&&(n=!0);n?e():setTimeout(function(){o.onloadcssdefined(e)})},o.onloadcssdefined(function(){o.media=t||"all"}),o}
             loadCSS('//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
             loadCSS('//fonts.googleapis.com/css?family=Russo+One');
             loadCSS('//fonts.googleapis.com/css?family=Merriweather+Sans:700,300italic,400italic,700italic,300,400');
@@ -26,7 +22,6 @@
             loadCSS('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
             loadCSS('/css/app.css');
         </script>
-        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico?v=1')); ?>
         <noscript>
             <?php echo $this->headLink()
                 ->prependStylesheet($this->basePath('/css/app.css'))
@@ -37,6 +32,14 @@
                 ->prependStylesheet('//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800')
             ; ?>
         </noscript>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()
+            ->prependFile(('//oss.maxcdn.com/respond/1.4.2/respond.min.js'), 'text/javascript', ['conditional' => 'lt IE 9',])
+            ->prependFile(('//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'), 'text/javascript', ['conditional' => 'lt IE 9',])
+        ; ?>
+
+        <link href="/img/favicon.ico?v=1" rel="shortcut icon" type="image/vnd.microsoft.icon">
     </head>
     <body>
         <div>
