@@ -33,7 +33,6 @@
     "blueimp-bootstrap-image-gallery": "~3.1.1",
     "masonry": "~3.3.0",
     "imagesloaded": "~3.1.8",
-    "isotope": "~2.2.0",
-    "loadcss": "~0.1.8"
+    "isotope": "~2.2.0"
   }
 }
