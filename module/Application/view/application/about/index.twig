@@ -1,0 +1,108 @@
+{% extends 'layout/layout.twig' %}
+
+{% block title %}{{ translate('About') }}{% endblock %}
+{% block content %}
+    <div class="replace hide">
+        <section class="promo section">
+            <div class="container text-center">
+                <h2 class="title">{{ translate('About') }}</h2>
+                <div class="intro">
+                    <p>{{ translate('Need %sout-of-the-box%s solutions for your idea?')|format('<span class="highlight">', '</span>')|raw }}</p>
+                    <p>{{ translate('%sAvailable CMS%s doesn’t match your business?')|format('<span class="highlight">', '</span>')|raw }}</p>
+                    <p>{{ translate('We’re gonna develop Web application you %scan’t refuse%s')|format('<span class="highlight">', '</span>')|raw }}.</p>
+                </div>
+            </div><!--//container-->
+        </section><!--//promo-->
+    </div><!--//header-wrapper-->
+
+    <!-- ******Services Section****** -->
+    <section id="services" class="services section">
+        <div class="container text-center">
+            <h2 class="title">{{ translate('Services') }}</h2>
+            <div class="intro">
+                <p>{{ translate('We propose a system in which:') }}</p>
+                <ul class="text-left">
+                    <li>{{ translate("%sapplication's functionality%s and architecture are individually designed")|format('<span class="highlight">', '</span>')|raw }};</li>
+                    <li>{{ translate('%sapplication logic%s suits your business process')|format('<span class="highlight">', '</span>')|raw }};</li>
+                    <li>{{ translate('%sdatabase structure%s fits your requirement')|format('<span class="highlight">', '</span>')|raw }};</li>
+                    <li>{{ translate('%scorrect website displaying%s on different devices')|format('<span class="highlight">', '</span>')|raw }};</li>
+                    <li><span class="highlight">{{ translate('highload and safety')|raw }}</span>.</li>
+                </ul>
+            </div>
+            <div class="service-items row">
+                <div class="item col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <div class="header-box">
+                            <span class="fs1" aria-hidden="true" data-icon="&#xe104;"></span>
+                        </div><!--//header-->
+                        <div class="desc">
+                            <h3 class="sub-title">UX &amp; Frontend</h3>
+                            <p>
+                                {{ translate('We use modern tools to develop the visual part of web applications. Responsive Web Design (RWD) — is the approach to web design that is aimed at the development of sites that provide the optimal display/view mode and user interaction - easy to read, comfortable navigation, suitable for a wide variety of devices (from desktop to mobile phone).') }}
+                            </p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <div class="header-box">
+                            <span class="fs1" aria-hidden="true" data-icon="&#xe035;"></span>
+                        </div><!--//header-->
+                        <div class="desc">
+                            <h3 class="sub-title">Backend</h3>
+                            <p>
+                                {{ translate('We place the main emphasis of the server technology on the PHP. It’s the powerful modern tool for creating of dynamic Web applications. To ensure high performance and productivity we use solution on the basis of modern framework Zend Framework that provides high performance, reliability and offers powerful functional capabilities.') }}
+                            </p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <div class="header-box">
+                            <span class="fs1" aria-hidden="true" data-icon="&#xe0ea;"></span>
+                        </div><!--//header-->
+                        <div class="desc">
+                            <h3 class="sub-title">Database</h3>
+                            <p>
+                                {{ translate('We use wide variety of database management systems, chosen on the basis of assigned tasks. All working systems are able to solve basic tasks - data management and storage - quickly and efficiently, has stood the test of times and has shown good results. You can be sure that your data is in safe hands.') }}
+                            </p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <div class="header-box">
+                            <span class="fs1" aria-hidden="true" data-icon="&#xe028;"></span>
+                        </div><!--//header-->
+                        <div class="desc">
+                            <h3 class="sub-title">Support</h3>
+                            <p>
+                                {{ translate('We will show, tell/explain, write, and teach. We aren’t too lazy to unscramble everything, describe and explain all details of the system. If you wish, we will upgrade or fix everything. If the system is complicated we will spend enough time to make everything absolutely clear for you. We are happy to answer any of your questions.') }}
+                            </p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div><!--//row-->
+            <a class="btn btn-cta btn-cta-primary" href="{{ url('contact') }}">{{ translate('Contact us today!') }}</a>
+        </div><!--//container-->
+    </section>
+
+    <!-- ******CTA Section****** -->
+    <section id="cta-section" class="cta-section section text-center home-cta-section">
+        <div class="container">
+            <h2 class="title">{{ translate('Want to have a quick chat?') }}</h2>
+            <p class="phone contact-info phone-hide">
+                <span>{{ translate('We are only a phone call away') }}</span>
+                <span class="info"><a href="tel:+380675623777"><span itemprop="telephone">0675623777</span></a></span>
+            </p><!--//phone-->
+            <p class="email contact-info">
+                <span class="intro">{{ translate('You can also email us') }}</span>
+                <span class="info"><a href="mailto:versoverteam@gmail.com"><span itemprop="email">versoverteam@gmail.com</span></a></span>
+            </p><!--//phone-->
+            <p class="skype contact-info">
+                <span class="intro">{{ translate('Or Skype') }}</span>
+                <span class="info"><a href="skype:versover?chat">Versover</a></span>
+            </p><!--//skype-->
+        </div><!--//container-->
+    </section><!--//cta-section-->
+{% endblock %}

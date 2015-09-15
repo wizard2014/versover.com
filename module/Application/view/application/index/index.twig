@@ -1,0 +1,329 @@
+{% extends 'layout/layout.twig' %}
+
+{% block title %}{{ translate('Home') }}{% endblock %}
+{% block content %}
+    <div class="replace hide">
+        <div class="bg-slider-wrapper">
+            <div id="bg-slider" class="flexslider bg-slider">
+                <ul class="slides">
+                    <li class="slide slide-1"></li>
+                    <li class="slide slide-2"></li>
+                    <li class="slide slide-3"></li>
+                </ul>
+            </div>
+        </div><!--//bg-slider-wrapper-->
+        <section id="home-promo" class="home-promo section">
+            <div class="container text-center">
+                <div class="title">
+                    <span class="upper">{{ translate('We build') }}</span>
+                    <span class="middle">{{ translate('Web applications') }}</span>
+                    <span class="bottom">{{ translate('for startups and agencies') }}</span>
+                </div>
+                <button class="btn btn-cta btn-cta-primary" type="button" data-toggle="modal" data-target="#modal-contact" data-backdrop="static">{{ translate('Talk to us') }}</button>
+            </div><!--//container-->
+        </section><!--//promo-->
+    </div>
+    <!-- ******Why Section****** -->
+    <section id="who" class="who section">
+        <div class="container text-center">
+            <h2 class="title text-center">{{ translate('Who we are') }}</h2>
+            <p class="intro text-center"><strong class="highlight">Versover</strong> — {{ translate('web-developers with a full range of services, specializing in PHP and Zend Framework') }}.</p>
+            <div class="row benefits text-center">
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" class="brand-logo php"></a>
+                        <h3 class="sub-title">PHP</h3>
+                        <div class="desc">
+                            <p>{{ translate('One of the leading language used to create dynamic web applications.') }}</p>
+                        </div>
+                    </div>
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12 sm-break">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/Zend_Framework" target="_blank" class="brand-logo zendframework"></a>
+                        <h3 class="sub-title">Zend Framework</h3>
+                        <div class="desc">
+                            <p>{{ translate('One of the most powerful software frames for developing web applications.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/MySQL" target="_blank" class="brand-logo mysql"></a>
+                        <h3 class="sub-title">MySQL</h3>
+                        <div class="desc">
+                            <p>{{ translate('Open-source database management system. MySQL is a solution for small and medium-sized applications.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/PostgreSQL" target="_blank" class="brand-logo postgresql"></a>
+                        <h3 class="sub-title">PostgreSQL</h3>
+                        <div class="desc">
+                            <p>{{ translate('Object-relational database management system with an emphasis on extensibility and on standards-compliance. Good for medium to large projects.') }}</p>
+                        </div>
+                    </div>
+                </div><!--//item-->
+            </div><!--//row-->
+            <div class="row benefits text-center">
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/SQLite" target="_blank" class="brand-logo sqlite"></a>
+                        <h3 class="sub-title">SQLite</h3>
+                        <div class="desc">
+                            <p>{{ translate('Compact embeddable relational database. A good solution for small projects.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12 sm-break">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="brand-logo javascript"></a>
+                        <h3 class="sub-title">JavaScript</h3>
+                        <div class="desc">
+                            <p>{{ translate('The most widely used is browsers like scripting language to make interactive Web pages.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/JQuery" target="_blank" class="brand-logo jquery"></a>
+                        <h3 class="sub-title">jQuery</h3>
+                        <div class="desc">
+                            <p>{{ translate('Popular JavaScript Library that has a great set of features to create stunning visual effects and more.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank" class="brand-logo ajax"></a>
+                        <h3 class="sub-title">AJAX</h3>
+                        <div class="desc">
+                            <p>{{ translate('Is a group of interrelated Web development techniques used on the client-side to create asynchronous Web applications.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div><!--//row-->
+            <div class="row benefits text-center">
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank" class="brand-logo html5"></a>
+                        <h3 class="sub-title">HTML5</h3>
+                        <div class="desc">
+                            <p>{{ translate('Is a core technology markup language of the Internet used for structuring and presenting content for the World Wide Web.') }}</p>
+                        </div>
+                    </div>
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12 sm-break">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" class="brand-logo css3"></a>
+                        <h3 class="sub-title">CSS3</h3>
+                        <div class="desc">
+                            <p>{{ translate('Is a style sheet language used for describing the look and formatting of a document written in a markup language.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank" class="brand-logo bootstrap"></a>
+                        <h3 class="sub-title">Bootstrap</h3>
+                        <div class="desc">
+                            <p>{{ translate('Is a collection of tools for creating websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/XML" target="_blank" class="brand-logo xml"></a>
+                        <h3 class="sub-title">XML</h3>
+                        <div class="desc">
+                            <p>eXtensible Markup Language — {{ translate('Is a markup language that defines a set of rules for encoding documents in a format which is both human-readable and machine-readable.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div><!--//row-->
+            <div class="row benefits text-center">
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="#" target="_blank" class="brand-logo json"></a>
+                        <h3 class="sub-title">JSON</h3>
+                        <div class="desc">
+                            <p>{{ translate('Is an open standard format that uses human-readable text to transmit data objects consisting of attribute–value pairs.') }}</p>
+                        </div>
+                    </div>
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12 sm-break">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/JSON" target="_blank" class="brand-logo elasticsearch"></a>
+                        <h3 class="sub-title">Elasticsearch</h3>
+                        <div class="desc">
+                            <p>{{ translate('It provides a distributed, multitenant-capable full-text search engine with a RESTful web interface and schema-free JSON documents.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="http://gulpjs.com/" target="_blank" class="brand-logo gulp"></a>
+                        <h3 class="sub-title">Gulp</h3>
+                        <div class="desc">
+                            <p>{{ translate('Build system automating tasks: minification and copying of all JavaScript files, static images, capable of watching files to automatically rerun the task when a file changes.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/Git_(software)" target="_blank" class="brand-logo git"></a>
+                        <h3 class="sub-title">Git</h3>
+                        <div class="desc">
+                            <p>{{ translate('Is a distributed revision control system with an emphasis on speed, data integrity, and support for distributed, non-linear workflows.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div><!--//row-->
+            <div class="row benefits text-center">
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/Composer_(software)" target="_blank" class="brand-logo composer"></a>
+                        <h3 class="sub-title">Composer</h3>
+                        <div class="desc">
+                            <p>{{ translate('is an application-level package manager for the PHP programming language that provides a standard format for managing dependencies of PHP software and required libraries.') }}</p>
+                        </div>
+                    </div>
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12 sm-break">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/Npm_(software)" target="_blank" class="brand-logo npm"></a>
+                        <h3 class="sub-title">NPM</h3>
+                        <div class="desc">
+                            <p>{{ translate('Is a package manager for') }} JavaScript.</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="http://bower.io/" target="_blank" class="brand-logo bower"></a>
+                        <h3 class="sub-title">Bower</h3>
+                        <div class="desc">
+                            <p>{{ translate('It works by fetching and installing packages from all over, taking care of hunting, finding, downloading.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/Vagrant_(software)" target="_blank" class="brand-logo vagrant"></a>
+                        <h3 class="sub-title">Vagrant</h3>
+                        <div class="desc">
+                            <p>{{ translate('Is computer software that creates and configures virtual development environments.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div><!--//row-->
+            <div class="row benefits text-center">
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/Web_scraping" target="_blank" class="brand-logo web-scraper"></a>
+                        <h3 class="sub-title">Web-scraping</h3>
+                        <div class="desc">
+                            <p>{{ translate('Is a computer software technique of extracting information from websites.') }}</p>
+                        </div>
+                    </div>
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12 sm-break">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/PayPal" target="_blank" class="brand-logo paypal"></a>
+                        <h3 class="sub-title">PayPal</h3>
+                        <div class="desc">
+                            <p>{{ translate('Implementing PHP system to work with the largest debit electronic payment system.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/Doctrine_(PHP)" target="_blank" class="brand-logo doctrine"></a>
+                        <h3 class="sub-title">Doctrine</h3>
+                        <div class="desc">
+                            <p>{{ translate('Is a set of PHP libraries primarily focused on providing persistence services and related functionality. Its prize projects are an object-relational mapper (ORM) and the database abstraction layer it is built on top of.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-3 col-sm-6 col-xs-12">
+                    <div class="item-inner">
+                        <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" class="brand-logo rest"></a>
+                        <h3 class="sub-title">REST</h3>
+                        <div class="desc">
+                            <p>Representational State Transfer. {{ translate('Is a software architecture style for building scalable web services.') }}</p>
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div><!--//row-->
+            <a class="btn btn-cta btn-cta-secondary" href="{{ url('about') }}">{{ translate('More about us') }}</a>
+        </div><!--//container-->
+    </section><!--//who-->
+
+    <!-- ******CTA Section****** -->
+    <section id="cta-section" class="cta-section section text-center home-cta-section">
+        <div class="container">
+            <h2 class="title">{{ translate('Want to have a quick chat?') }}</h2>
+            <p class="phone contact-info phone-hide">
+                <span>{{ translate('We are only a phone call away') }}</span>
+                <span class="info"><a href="tel:+380675623777"><span itemprop="telephone">0675623777</span></a></span>
+            </p><!--//phone-->
+            <p class="email contact-info">
+                <span class="intro">{{ translate('You can also email us') }}</span>
+                <span class="info"><a href="mailto:versoverteam@gmail.com"><span itemprop="email">versoverteam@gmail.com</span></a></span>
+            </p><!--//phone-->
+            <p class="skype contact-info">
+                <span class="intro">{{ translate('Or Skype') }}</span>
+                <span class="info"><a href="skype:versover?chat">Versover</a></span>
+            </p><!--//skype-->
+        </div><!--//container-->
+    </section><!--//cta-section-->
+
+    <!-- Contact Modal -->
+    <div class="modal modal-contact" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 id="contactModalLabel" class="modal-title text-center">{{ translate('Start your project today') }}</h4>
+                    <p class="intro text-center">{{ translate('If you have suggestions, questions - feel free to write us - we will reply to you shortly!') }}</p>
+                </div>
+                <div class="modal-body">
+                    <ul class="contact-info list-inline text-center">
+                        <li class="tel phone-hide"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><br> <a href="tel:+380675623777">0675623777</a></li>
+                        <li class="email"><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><br> <a href="mailto:versoverteam@gmail.com">versoverteam@gmail.com</a></li>
+                        <li class="skype-icon"><span class="fs1" aria-hidden="true" data-icon="&#xe0a2;"></span><br> <a href="skype:versover?chat">Versover</a></li>
+                    </ul>
+                    <form id="contact-form" class="contact-form" method="post" action="{{ url('contact', { 'action': 'send' }) }}">
+                        <div class="row text-center">
+                            <div class="contact-form-inner">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <label class="sr-only" for="cname">{{ translate('Name') }}</label>
+                                        <input type="text" class="form-control" id="cname" name="name" placeholder="{{ translate('Name') }}" minlength="2" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <label class="sr-only" for="cemail">{{ translate('Email') }}</label>
+                                        <input type="email" class="form-control" id="cemail" name="email" placeholder="{{ translate('Email') }}" required>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <label class="sr-only" for="csubject">{{ translate('Subject') }}</label>
+                                        <input type="text" class="form-control" id="csubject" name="subject" placeholder="{{ translate('Subject') }}" required>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <label class="sr-only" for="cmessage">{{ translate('Message') }}</label>
+                                        <textarea class="form-control" id="cmessage" name="message" placeholder="{{ translate('Message') }}" rows="12" required></textarea>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <button type="submit" class="btn btn-block btn-cta btn-cta-primary sbm-btn">{{ translate('Send') }}</button>
+                                    </div>
+                                </div><!--//row-->
+                            </div>
+                        </div><!--//row-->
+                        <div id="form-messages"></div>
+                    </form><!--//contact-form-->
+                </div><!--//modal-body-->
+            </div><!--//modal-content-->
+        </div><!--//modal-dialog-->
+    </div><!--//modal-->
+{% endblock %}

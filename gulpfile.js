@@ -4,8 +4,8 @@ var gulp       = require('gulp'),
     concat     = require('gulp-concat'),
     uglify     = require('gulp-uglify'),
     less       = require('gulp-less'),
-    minifyCss  = require('gulp-minify-css'),
-    sourcemaps = require('gulp-sourcemaps');
+    minifyCss  = require('gulp-minify-css')/*,
+    sourcemaps = require('gulp-sourcemaps')*/;
 
 var paths = {
     bower:  './bower_components',
@@ -22,9 +22,9 @@ gulp.task('styles', function() {
     ])
         .pipe(less())
         .pipe(concat('app.css'))
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(minifyCss())
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest('./public/css'));
 });
 

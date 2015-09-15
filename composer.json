@@ -11,6 +11,7 @@
         "php": ">=5.5",
         "zendframework/zendframework": "~2.5",
         "zendframework/zftool": "dev-master",
-        "ripaclub/zf2-mailman": "v0.3.0"
+        "ripaclub/zf2-mailman": "v0.3.0",
+        "zf-commons/zfc-twig": "1.2.2"
     }
 }

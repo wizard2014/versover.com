@@ -1,39 +1,33 @@
-<?php echo $this->doctype(); ?>
+{{ docType() }}
+
+{% spaceless %}
 
 <html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="utf-8">
-        <?php echo $this->headTitle($this->translate('Versover'))->setSeparator(' &bull; ')->setAutoEscape(false) ?>
 
-        <?php echo $this->headMeta()
-            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
-            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
-            ->appendName('keywords', 'PHP, Zend Framework, MySQL, PostgreSQL, SQLite, JavaScript, jQuery, AJAX, HTML5, CSS3, Bootstrap, XML, JSON, Elasticsearch, Gulp, Git, Composer, NPM, Bower, Vagrant, Web-scraping, Parser, PayPal, eBay, Doctrine, REST')
-            ->appendName('description', 'Web-developers with a full range of services, specializing in PHP and Zend Framework')
-        ?>
+        <title>{% block title %}{% endblock %} &bull; {{ translate('Versover') }}</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="PHP, Zend Framework, MySQL, PostgreSQL, SQLite, JavaScript, jQuery, AJAX, HTML5, CSS3, Bootstrap, XML, JSON, Elasticsearch, Gulp, Git, Composer, NPM, Bower, Vagrant, Web-scraping, Parser, PayPal, eBay, Doctrine, REST">
+        <meta name="description" content="Web-developers with a full range of services, specializing in PHP and Zend Framework">
 
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="versover">
         <meta property="og:url" content="http://versover.com/">
         <meta property="og:title" content="Versover -web-developers with a full range of services, specializing in PHP and Zend Framework.">
         <meta property="og:description" content="Web-developers with a full range of services, specializing in PHP and Zend Framework.">
+        {% block meta %}{% endblock %}
 
-        <!-- Le styles -->
-        <?php echo $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico?v=1'])
-            ->prependStylesheet($this->basePath('/css/app.css'))
-            ->prependStylesheet('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
-            ->prependStylesheet('//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
-            ->prependStylesheet('//fonts.googleapis.com/css?family=Merriweather+Sans:700,300italic,400italic,700italic,300,400')
-            ->prependStylesheet('//fonts.googleapis.com/css?family=Russo+One')
-            ->prependStylesheet('//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800')
-        ; ?>
+        <link rel="stylesheet" href="{{ basePath() }}/css/app.css">
+        <link href="{{ basePath() }}/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        {% block style %}{% endblock %}
 
-        <!-- Scripts -->
-        <?php echo $this->headScript()
-            ->prependFile(('//oss.maxcdn.com/respond/1.4.2/respond.min.js'), 'text/javascript', ['conditional' => 'lt IE 9',])
-            ->prependFile(('//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'), 'text/javascript', ['conditional' => 'lt IE 9',])
-        ; ?>
+        <!--[if lt IE 9]><script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     </head>
+
     <body>
         <div itemscope itemtype="http://schema.org/LocalBusiness">
             <div class="header-wrapper">
@@ -41,7 +35,7 @@
                 <header id="header" class="header navbar-fixed-top">
                     <div class="container">
                         <h1 class="logo">
-                            <a class="versover" href="<?php echo $this->url('home'); ?>"><span itemprop="name"><span class="highlight">V</span>ersover</span></a>
+                            <a class="versover" href="{{ url('home') }}"><span itemprop="name"><span class="highlight">V</span>ersover</span></a>
                         </h1><!--//logo-->
                         <nav class="main-nav navbar-right" role="navigation">
                             <div class="navbar-header">
@@ -53,7 +47,7 @@
                                 </button><!--//nav-toggle-->
                             </div><!--//navbar-header-->
                             <div id="navbar-collapse" class="navbar-collapse collapse">
-                                <?php echo $this->navigation('navigation')->menu()->setULClass('nav navbar-nav'); ?><!--//nav-->
+                                {{ navigation('navigation').menu().setULClass('nav navbar-nav')|raw }}<!--//nav-->
                             </div><!--//navabr-collapse-->
                             <div class="lang-switch">
                                 <span class="lang en" data-lang="en">En</span>
@@ -65,33 +59,8 @@
 
             </div><!--//header-wrapper-->
 
-            <?php echo $this->content; ?>
-            <script>
-                var path    = location.href.split('/').pop(),
-                    place   = document.querySelector('.header-wrapper'),
-                    replace = document.querySelector('.replace'),
-                    error   = false;
-                switch (path) {
-                    case 'about':
-                        place.classList.add('header-wrapper-about');
-                        break;
-                    case 'blog':
-                        place.classList.add('header-wrapper-blog-home');
-                        break;
-                    case 'contact':
-                        place.classList.add('header-wrapper-contact');
-                        break;
-                    case '':
-                    case 'ru':
-                        place.classList.add('header-wrapper-home');
-                        break;
-                    default:
-                        error = !error;
-                }
-                if (!error) {
-                    place.appendChild(replace).classList.remove('hide');
-                }
-            </script>
+            {% block content %}{{ content|raw }}{% endblock %}
+            <script>var path=location.href.split('/').pop(),place=document.querySelector('.header-wrapper'),replace=document.querySelector('.replace'),error=false;switch(path){case'about':place.classList.add('header-wrapper-about');break;case'blog':place.classList.add('header-wrapper-blog-home');break;case'contact':place.classList.add('header-wrapper-contact');break;case'':case'ru':place.classList.add('header-wrapper-home');break;default:error=!error;}if(!error){place.appendChild(replace).classList.remove('hide');}</script>
 
             <!-- ******FOOTER****** -->
             <footer class="footer">
@@ -100,13 +69,13 @@
                         <div class="row">
                             <div class="footer-col col-xs-3 col-sm-offset-3 col-xs-offset-1 links-col">
                                 <div class="footer-col-inner">
-                                    <h3 class="sub-title"><?php echo $this->translate('Quick Links'); ?></h3>
-                                    <?php echo $this->navigation('navigation')->menu()->setULClass('list-unstyled'); ?>
+                                    <h3 class="sub-title">{{ translate('Quick Links') }}</h3>
+                                    {{ navigation('navigation').menu().setULClass('list-unstyled')|raw }}
                                 </div><!--//footer-col-inner-->
                             </div><!--//foooter-col-->
                             <div class="footer-col col-xs-3 contact-col">
                                 <div class="footer-col-inner">
-                                    <h3 class="sub-title"><?php echo $this->translate('Get In Touch'); ?></h3>
+                                    <h3 class="sub-title">{{ translate('Get In Touch') }}</h3>
                                     <div class="row">
                                         <p class="phone-hide"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><a href="tel:+380675623777">0675623777</a></p>
                                         <p><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><a href="mailto:versoverteam@gmail.com">versoverteam@gmail.com</a></p>
@@ -119,19 +88,16 @@
                 </div><!--//footer-content-->
                 <div class="bottom-bar">
                     <div class="container center">
-                        <small class="copyright text-center">&copy; <a class="versover" href="<?php echo $this->url('home'); ?>">Versover</a> <?php echo date('Y'); ?></small>
+                        <small class="copyright text-center">&copy; <a class="versover" href="{{ url('home') }}">Versover</a> {{ 'now'|date('Y') }}</small>
                     </div><!--//container-->
                 </div><!--//bottom-bar-->
             </footer><!--//footer-->
+        </div>
         <script>if (error) document.querySelector('.footer').style.display = 'none';</script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <?php
-        $script = $this->inlineScript();
-        $script
-            ->appendFile($this->basePath() . '/js/app.js');
-
-        echo $script;
-        ?>
+        <script src="{{ basePath() }}/js/app.js"></script>
+        {% block script %}{% endblock %}
     </body>
 </html>
+{% endspaceless %}
