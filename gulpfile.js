@@ -14,11 +14,13 @@ var paths = {
 
 gulp.task('styles', function() {
     return gulp.src([
+        paths.bower   + '/bootstrap/dist/css/bootstrap.css',
+        paths.bower   + '/font-awesome/css/font-awesome.css',
         paths.bower   + '/flexslider/flexslider.less',
         paths.bower   + '/owl-carousel/owl-carousel/owl.carousel.css',
         paths.bower   + '/owl-carousel/owl-carousel/owl.theme.css',
-        paths.assets + '/styles/**/*.css',
-        paths.assets + '/styles/**/*.less'
+        paths.assets  + '/styles/**/*.css',
+        paths.assets  + '/styles/**/*.less'
     ])
         .pipe(less())
         .pipe(concat('app.css'))
@@ -30,6 +32,8 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
     return gulp.src([
+        paths.bower   + '/jquery/dist/jquery.js',
+        paths.bower   + '/bootstrap/dist/js/bootstrap.js',
         paths.bower   + '/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js',
         paths.bower   + '/jquery-placeholder/jquery.placeholder.js',
         paths.bower   + '/matchHeight/jquery.matchHeight.js',
