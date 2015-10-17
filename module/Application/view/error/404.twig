@@ -4,3 +4,9 @@
 {% block content %}
     <img src="/img/background/404.png" class="img-responsive center-img">
 {% endblock %}
+{% block script %}
+    <script>
+        $('.footer').css('display', 'none');
+        $('.header-wrapper').css('background', 'none');
+    </script>
+{% endblock %}

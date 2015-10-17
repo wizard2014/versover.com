@@ -1,5 +1,7 @@
 <?php
 
+namespace Application;
+
 return [
     'router' => [
         'routes' => [
@@ -8,7 +10,7 @@ return [
                 'options' => [
                     'route'    => '/[:lang]',
                     'defaults' => [
-                        'controller' => 'Application\Controller\Index',
+                        'controller' => Controller\Index::class,
                         'action'     => 'index',
                         'lang'       => '',
                     ],
@@ -19,7 +21,7 @@ return [
                 'options' => [
                     'route'    => '[/:lang]/about',
                     'defaults' => [
-                        'controller' => 'Application\Controller\About',
+                        'controller' => Controller\About::class,
                         'action'     => 'index',
                         'lang'       => '',
                     ],
@@ -30,7 +32,7 @@ return [
                 'options' => [
                     'route'    => '[/:lang]/blog',
                     'defaults' => [
-                        'controller' => 'Application\Controller\Blog',
+                        'controller' => Controller\Blog::class,
                         'action'     => 'index',
                         'lang'       => '',
                     ],
@@ -44,22 +46,21 @@ return [
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                     ],
                     'defaults' => [
-                        'controller' => 'Application\Controller\Contact',
+                        'controller' => Controller\Contact::class,
                         'action'     => 'index',
                         'lang'       => '',
                     ],
                 ],
             ],
-
         ],
     ],
     'service_manager' => [
         'abstract_factories' => [
-            'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
-            'Zend\Log\LoggerAbstractServiceFactory',
+            \Zend\Cache\Service\StorageCacheAbstractServiceFactory::class,
+            \Zend\Log\LoggerAbstractServiceFactory::class,
         ],
         'factories' => [
-            'translator' => 'Zend\Mvc\Service\TranslatorServiceFactory',
+            'translator' => \Zend\Mvc\Service\TranslatorServiceFactory::class,
         ],
     ],
     'translator' => [
@@ -74,10 +75,10 @@ return [
     ],
     'controllers' => [
         'invokables' => [
-            'Application\Controller\Index'   => 'Application\Controller\IndexController',
-            'Application\Controller\About'   => 'Application\Controller\AboutController',
-            'Application\Controller\Blog'    => 'Application\Controller\BlogController',
-            'Application\Controller\Contact' => 'Application\Controller\ContactController',
+            'Application\Controller\Index'   => Controller\IndexController::class,
+            'Application\Controller\About'   => Controller\AboutController::class,
+            'Application\Controller\Blog'    => Controller\BlogController::class,
+            'Application\Controller\Contact' => Controller\ContactController::class,
         ],
     ],
     'view_manager' => [

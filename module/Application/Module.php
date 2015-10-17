@@ -19,18 +19,23 @@ class Module
             $translator = $sm->get('translator');
             $lang       = $e->getRouteMatch()->getParam('lang');
 
-            if (strtolower($lang) == 'ru') {
-                $lang = 'ru_RU';
+            if (!empty($lang)) {
+                if (strtolower($lang) == 'ru') {
+                    $lang = 'ru_RU';
 
-                // nav
-                $navItems = $sm->get('navigation');
+                    // nav
+                    $navItems = $sm->get('navigation');
 
-                foreach ($navItems as $item) {
-                   $item->setParams(['lang' => 'ru']);
+                    foreach ($navItems as $item) {
+                        $item->setParams(['lang' => 'ru']);
+                    }
+                } else {
+                    $e->getResponse()->setStatusCode(404);
+                    return;
                 }
-            }
 
-            $translator->setLocale($lang);
+                $translator->setLocale($lang);
+            }
         });
     }
 
