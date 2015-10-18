@@ -60,7 +60,7 @@
             </div><!--//header-wrapper-->
 
             {% block content %}{{ content|raw }}{% endblock %}
-            <script>var path=location.href.split('/').pop(),place=document.querySelector('.header-wrapper'),replace=document.querySelector('.replace'),error=false;switch(path){case'about':place.classList.add('header-wrapper-about');break;case'blog':place.classList.add('header-wrapper-blog-home');break;case'contact':place.classList.add('header-wrapper-contact');break;case'':case'ru':place.classList.add('header-wrapper-home');break;default:error=!error;}if(!error){place.appendChild(replace).classList.remove('hide');}</script>
+            <script>var path=location.href.split("/").pop(),place=document.querySelector(".header-wrapper"),replace=document.querySelector(".replace"),error=!1;switch(/[?][\w]+=[\d]+/.test(path)&&(path=""),path){case"about":place.classList.add("header-wrapper-about");break;case"blog":place.classList.add("header-wrapper-blog-home");break;case"contact":place.classList.add("header-wrapper-contact");break;case"":case"ru":place.classList.add("header-wrapper-home");break;default:error=!error}error||place.appendChild(replace).classList.remove("hide");</script>
 
             <!-- ******FOOTER****** -->
             <footer class="footer">
