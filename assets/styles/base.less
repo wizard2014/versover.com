@@ -480,7 +480,7 @@ body.no-header-wrapper {
     .benefits {
         .item {
             font-size: 16px;            
-            margin-bottom: 60px;            
+            margin-bottom: 60px;
 
             .fs1 {
                 font-size: 36px;
@@ -491,6 +491,15 @@ body.no-header-wrapper {
             padding: 30px;
             padding-top: 45px;
             background: lighten(@color-2, 50%);
+
+            &:hover {
+                position: absolute;
+                z-index: 999;
+                left: -1px;
+                -webkit-box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+                -moz-box-shadow:    0 0 5px 0 rgba(50, 50, 50, 0.75);
+                box-shadow:         0 0 5px 0 rgba(50, 50, 50, 0.75);
+            }
         }
         .sub-title {
             font-weight: bold;
@@ -499,7 +508,12 @@ body.no-header-wrapper {
             color: darken(@color-2, 10%);
         }
         .desc {
+            display: none;
             color: @color-2;
+        }
+
+        .desc.on {
+            display: block;
         }
     }
 }    
