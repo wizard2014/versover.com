@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<framework xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schemas/frameworkDescriptionVersion1.1.3.xsd" frameworkId="com.zend.framework2" name="Zend Framework 2 Tool_30.06.15 12:35_zf2" invoke="php.exe D:\xampp\htdocs\versover.com\zftool.phar" alias="zf2" enabled="true" version="2">
+  <command>
+    <name>modules</name>
+    <help><![CDATA[<html><table><tr><td><b> zftool.phar modules [list]<b></td><td> show loaded modules </td></tr></table></html>]]></help>
+    <params>list[=null]</params>
+  </command>
+  <command>
+    <name>version</name>
+    <help><![CDATA[<html><table><tr><td><b> zftool.phar version | --version<b></td><td>display current Zend Framework version </td></tr></table></html>]]></help>
+  </command>
+  <command>
+    <name>diag</name>
+    <help><![CDATA[<html><table><tr><td><b> zftool.phar diag [options] [module name]<b></td><td>run diagnostics </td></tr></table><table><tr><td>[module name]</td><td>(Optional) name of module to test</td></tr><tr><td>-v --verbose</td><td>Display detailed information.</td></tr><tr><td>-b --break</td><td>Stop testing on first failure</td></tr><tr><td>-q --quiet</td><td>Do not display any output unless an error occurs.</td></tr><tr><td>--debug</td><td>Display raw debug info from tests.</td></tr></table></html>]]></help>
+    <params>options[=null] modulename[=null]</params>
+  </command>
+  <command>
+    <name>config list</name>
+    <help><![CDATA[<html><table><tr><td><b> zftool.phar config list<b></td><td> list all configuration options </td></tr></table></html>]]></help>
+  </command>
+  <command>
+    <name>config get</name>
+    <help><![CDATA[<html><table><tr><td><b> zftool.phar config get &lt;name&gt;<b></td><td> display a single config value, i.e. "config get db.host"</td></tr></table></html>]]></help>
+    <params>name</params>
+  </command>
+  <command>
+    <name>config set</name>
+    <help><![CDATA[<html><table><tr><td><b> zftool.phar config set &lt;name&gt; &lt;value&gt;<b></td><td>set a single config value (use only to change scalar values)</td></tr></table></html>]]></help>
+    <params>name value</params>
+  </command>
+  <command>
+    <name>create project</name>
+    <help><![CDATA[<html><table><tr><td><b> zftool.phar create project &lt;path&gt;<b></td><td>create a skeleton application </td></tr></table><table><tr><td>&lt;path&gt;</td><td>The path of the project to be created</td></tr></table></html>]]></help>
+    <params>path</params>
+  </command>
+  <command>
+    <name>create module</name>
+    <help><![CDATA[<html><table><tr><td><b> zftool.phar create module &lt;name&gt; [&lt;path&gt;]<b></td><td>create a module </td></tr></table><table><tr><td>&lt;name&gt;</td><td>The name of the module to be created</td></tr><tr><td>&lt;path&gt;</td><td>The root path of a ZF2 application where to create the module</td></tr></table></html>]]></help>
+    <params>name path[=null]</params>
+  </command>
+  <command>
+    <name>create controller</name>
+    <help><![CDATA[<html><table><tr><td><b> zftool.phar create controller &lt;name&gt; &lt;module&gt; [&lt;path&gt;]<b></td><td>create a controller in</td></tr></table><table><tr><td>&lt;name&gt;</td><td>The name of the controller to be created</td></tr><tr><td>&lt;module&gt;</td><td>The module in which the controller should be created</td></tr><tr><td>&lt;path&gt;</td><td>The root path of a ZF2 application where to create the controller</td></tr></table></html>]]></help>
+    <params>name module path[=null]</params>
+  </command>
+  <command>
+    <name>create action</name>
+    <help><![CDATA[<html><table><tr><td><b>zftool.phar create action &lt;name&gt; &lt;controllerName&gt; &lt;module&gt; [&lt;path&gt;]<b></td><td>create an action in a controller</td></tr></table><table><tr><td>&lt;name&gt;</td><td>The name of the action to be created</td></tr><tr><td>&lt;controllerName&gt;</td><td>The name of the controller in which the action should be created</td></tr><tr><td>&lt;module&gt;</td><td>The module containing the controller</td></tr><tr><td>&lt;path&gt;</td><td>The root path of a ZF2 application where to create the action</td></tr></table></html>]]></help>
+    <params>name controllerName module path[=null]</params>
+  </command>
+  <command>
+    <name>classmap generate</name>
+    <help><![CDATA[<html><table><tr><td><b>zftool.phar classmap generate &lt;directory&gt; &lt;classmap file&gt; [--append|-a] [--overwrite|-w]<b></td><td></td></tr></table><table><tr><td>&lt;directory&gt;</td><td>The directory to scan for PHP classes (use "." to use current directory)</td></tr><tr><td>&lt;classmap file&gt;</td><td>File name for generated class map file or - for standard output. If not supplied, defaults to</td></tr><tr><td>--append | -a</td><td>Append to classmap file if it exists</td></tr><tr><td>--overwrite | -w</td><td>Whether or not to overwrite existing classmap file</td></tr></table></html>]]></help>
+    <params>directory classmapfile</params>
+  </command>
+  <command>
+    <name>install zf</name>
+    <help><![CDATA[<html><table><tr><td><b> zftool.phar install zf &lt;path&gt; [&lt;version&gt;]<b></td><td> </td></tr></table><table><tr><td>&lt;path&gt;</td><td>The directory where to install the ZF2 library</td></tr><tr><td>&lt;version&gt;</td><td>The version to install, if not specified uses the last available</td></tr></table></html>]]></help>
+    <params>path version[=null]</params>
+  </command>
+  <help><![CDATA[<html><table><tr><td><b> zftool.phar modules [list]<b></td><td> show loaded modules </td></tr></table><table><tr><td><b> zftool.phar version | --version<b></td><td>display current Zend Framework version </td></tr></table><table><tr><td><b> zftool.phar diag [options] [module name]<b></td><td>run diagnostics </td></tr></table><table><tr><td>[module name]</td><td>(Optional) name of module to test</td></tr><tr><td>-v --verbose</td><td>Display detailed information.</td></tr><tr><td>-b --break</td><td>Stop testing on first failure</td></tr><tr><td>-q --quiet</td><td>Do not display any output unless an error occurs.</td></tr><tr><td>--debug</td><td>Display raw debug info from tests.</td></tr></table><table><tr><td><b> zftool.phar config list<b></td><td> list all configuration options </td></tr></table><table><tr><td><b> zftool.phar config get &lt;name&gt;<b></td><td> display a single config value, i.e. "config get db.host"</td></tr></table><table><tr><td><b> zftool.phar config set &lt;name&gt; &lt;value&gt;<b></td><td>set a single config value (use only to change scalar values)</td></tr></table><table><tr><td><b> zftool.phar create project &lt;path&gt;<b></td><td>create a skeleton application </td></tr></table><table><tr><td>&lt;path&gt;</td><td>The path of the project to be created</td></tr></table><table><tr><td><b> zftool.phar create module &lt;name&gt; [&lt;path&gt;]<b></td><td>create a module </td></tr></table><table><tr><td>&lt;name&gt;</td><td>The name of the module to be created</td></tr><tr><td>&lt;path&gt;</td><td>The root path of a ZF2 application where to create the module</td></tr></table><table><tr><td><b> zftool.phar create controller &lt;name&gt; &lt;module&gt; [&lt;path&gt;]<b></td><td>create a controller in</td></tr></table><table><tr><td>&lt;name&gt;</td><td>The name of the controller to be created</td></tr><tr><td>&lt;module&gt;</td><td>The module in which the controller should be created</td></tr><tr><td>&lt;path&gt;</td><td>The root path of a ZF2 application where to create the controller</td></tr></table><table><tr><td><b>zftool.phar create action &lt;name&gt; &lt;controllerName&gt; &lt;module&gt; [&lt;path&gt;]<b></td><td>create an action in a controller</td></tr></table><table><tr><td>&lt;name&gt;</td><td>The name of the action to be created</td></tr><tr><td>&lt;controllerName&gt;</td><td>The name of the controller in which the action should be created</td></tr><tr><td>&lt;module&gt;</td><td>The module containing the controller</td></tr><tr><td>&lt;path&gt;</td><td>The root path of a ZF2 application where to create the action</td></tr></table><table><tr><td><b>zftool.phar classmap generate &lt;directory&gt; &lt;classmap file&gt; [--append|-a] [--overwrite|-w]<b></td><td></td></tr></table><table><tr><td>&lt;directory&gt;</td><td>The directory to scan for PHP classes (use "." to use current directory)</td></tr><tr><td>&lt;classmap file&gt;</td><td>File name for generated class map file or - for standard output. If not supplied, defaults to</td></tr><tr><td>--append | -a</td><td>Append to classmap file if it exists</td></tr><tr><td>--overwrite | -w</td><td>Whether or not to overwrite existing classmap file</td></tr></table><table><tr><td><b> zftool.phar install zf &lt;path&gt; [&lt;version&gt;]<b></td><td> </td></tr></table><table><tr><td>&lt;path&gt;</td><td>The directory where to install the ZF2 library</td></tr><tr><td>&lt;version&gt;</td><td>The version to install, if not specified uses the last available</td></tr></table></html>]]></help>
+</framework>
+
