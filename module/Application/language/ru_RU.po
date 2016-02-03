@@ -1,0 +1,344 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Versover\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-21 14:45+0300\n"
+"PO-Revision-Date: 2015-10-21 15:18+0300\n"
+"Last-Translator: wizard2014 <wizard2014@ya.ru>\n"
+"Language-Team: Versover Team <versoverteam@gmail.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../view/layout/layout.twig:6
+msgid "Versover"
+msgstr "Versover"
+
+#: ../view/layout/layout.twig:72
+msgid "Quick Links"
+msgstr "Быстрые ссылки"
+
+#: ../view/layout/layout.twig:97 ../view/application/index/index.twig:2
+msgid "Home"
+msgstr "Главная"
+
+#: ../view/layout/layout.twig:98 ../view/application/about/index.twig:2
+#: ../view/application/about/index.twig:8
+msgid "About"
+msgstr "О нас"
+
+#: ../view/layout/layout.twig:99 ../view/application/contact/index.twig:2
+msgid "Contacts"
+msgstr "Контакты"
+
+#: ../view/layout/layout.twig:100
+msgid "Blog"
+msgstr "Блог"
+
+#: ../view/layout/layout.twig:78
+msgid "Get In Touch"
+msgstr "Всегда на связи"
+
+#: ../view/application/index/index.twig:18
+msgid "We build"
+msgstr "Мы создаем"
+
+#: ../view/application/index/index.twig:19
+msgid "Web applications"
+msgstr "Веб приложения"
+
+#: ../view/application/index/index.twig:20
+msgid "for startups and agencies"
+msgstr "для стартапов и организаций"
+
+#: ../view/application/index/index.twig:22
+msgid "Talk to us"
+msgstr "Обратитесь к нам"
+
+#: ../view/application/index/index.twig:29
+msgid "Who we are"
+msgstr "Кто мы"
+
+#: ../view/application/index/index.twig:30
+msgid "web-developers with a full range of services, specializing in PHP and Zend Framework"
+msgstr "веб-разработчики с полным спектром услуг, специализирующиеся на PHP и Zend Framework"
+
+#: ../view/application/index/index.twig:31
+msgid "We develop and support web sites, online stores and web applications, information systems and databases, cloud and enterprise Web services"
+msgstr "Мы разрабатываем и сопровождаем сайты, интернет магазины и веб приложения, информационные системы и базы данных, облачные и корпоративные веб сервисы"
+
+#: ../view/application/index/index.twig:33
+msgid "Technologies we use"
+msgstr "Технологии которые мы используем"
+
+#: ../view/application/index/index.twig:39
+msgid "One of the leading language used to create dynamic web applications."
+msgstr "Один из лидеров среди языков, применяющихся для создания динамических веб-приложений."
+
+#: ../view/application/index/index.twig:48
+msgid "One of the most powerful software frames for developing web applications."
+msgstr "Один из наиболее мощных программных каркасов для разработки веб-приложений."
+
+#: ../view/application/index/index.twig:57
+msgid "Open-source database management system. MySQL is a solution for small and medium-sized applications."
+msgstr "Свободная реляционная система управления базами данных. MySQL является решением для малых и средних приложений."
+
+#: ../view/application/index/index.twig:66
+msgid "Object-relational database management system with an emphasis on extensibility and on standards-compliance. Good for medium to large projects."
+msgstr "Объектно-реляционная система управления базами данных. Обладает богатым функционалом. Подходит для средних и крупных проектов."
+
+#: ../view/application/index/index.twig:77
+msgid "Compact embeddable relational database. A good solution for small projects."
+msgstr "Компактная встраиваемая реляционная база данных. Хорошее решение для небольших проектов."
+
+#: ../view/application/index/index.twig:86
+msgid "The most widely used is browsers like scripting language to make interactive Web pages."
+msgstr "Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности веб-страницам."
+
+#: ../view/application/index/index.twig:95
+msgid "Popular JavaScript Library that has a great set of features to create stunning visual effects and more."
+msgstr "Популярная JavaScript библиотека, которая обладает большим набором возможностей для создания великолепных визуальных эффектов и не только."
+
+#: ../view/application/index/index.twig:104
+msgid "Is a group of interrelated Web development techniques used on the client-side to create asynchronous Web applications."
+msgstr "Подход к построению интерактивных пользовательских веб-приложений, заключающийся в «фоновом» обмене данными браузера с веб-сервером."
+
+#: ../view/application/index/index.twig:115
+msgid "Is a core technology markup language of the Internet used for structuring and presenting content for the World Wide Web."
+msgstr "Язык разметки документов в интернете."
+
+#: ../view/application/index/index.twig:124
+msgid "Is a style sheet language used for describing the look and formatting of a document written in a markup language."
+msgstr "Язык, который используется для описания внешнего вида документа."
+
+#: ../view/application/index/index.twig:133
+msgid "Is a collection of tools for creating websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions."
+msgstr "Набор инструментов для создания сайтов и веб-приложений. Включает в себя: HTML и CSS шаблоны, оформления для типографики, веб-формы, кнопки, метки, блоки навигации и прочие компоненты веб-интерфейсов, включая JavaScript расширения."
+
+#: ../view/application/index/index.twig:142
+msgid "Is a markup language that defines a set of rules for encoding documents in a format which is both human-readable and machine-readable."
+msgstr "расширяемый язык разметки. Формат удобный для создания и обработки документов программами и одновременно удобный для чтения человеком."
+
+#: ../view/application/index/index.twig:153
+msgid "Is an open standard format that uses human-readable text to transmit data objects consisting of attribute–value pairs."
+msgstr "Текстовый формат обмена данными, в настоящее время очень популярен в веб."
+
+#: ../view/application/index/index.twig:162
+msgid "It provides a distributed, multitenant-capable full-text search engine with a RESTful web interface and schema-free JSON documents."
+msgstr "Поисковый сервер. Обеспечивает распределенный, высокоскоростной механизм полнотекстового поиска, веб-интерфейс и схему JSON документов."
+
+#: ../view/application/index/index.twig:171
+msgid "Build system automating tasks: minification and copying of all JavaScript files, static images, capable of watching files to automatically rerun the task when a file changes."
+msgstr "Современный инструмент для автоматизация процесса разработки."
+
+#: ../view/application/index/index.twig:180
+msgid "Is a distributed revision control system with an emphasis on speed, data integrity, and support for distributed, non-linear workflows."
+msgstr "Система для управления версиями."
+
+#: ../view/application/index/index.twig:191
+msgid "is an application-level package manager for the PHP programming language that provides a standard format for managing dependencies of PHP software and required libraries."
+msgstr "Пакетный менеджер уровня приложений для языка программирования PHP, который предоставляет средства по управлению зависимостями в PHP-приложении."
+
+#: ../view/application/index/index.twig:200
+msgid "Is a package manager for"
+msgstr "Пакетный менеджер для языка"
+
+#: ../view/application/index/index.twig:209
+msgid "It works by fetching and installing packages from all over, taking care of hunting, finding, downloading."
+msgstr "Система управления пакетами для программирования на стороне клиента."
+
+#: ../view/application/index/index.twig:218
+msgid "Is computer software that creates and configures virtual development environments."
+msgstr "Программное обеспечение для создания и конфигурирования виртуальной среды разработки."
+
+#: ../view/application/index/index.twig:229
+msgid "Is a computer software technique of extracting information from websites."
+msgstr "Программное обеспечение для извлечения информации из веб-сайтов."
+
+#: ../view/application/index/index.twig:238
+msgid "Implementing PHP system to work with the largest debit electronic payment system."
+msgstr "Реализация PHP системы для работы с крупнейшей дебетовой электронной платежной системой."
+
+#: ../view/application/index/index.twig:247
+msgid "Is a set of PHP libraries primarily focused on providing persistence services and related functionality. Its prize projects are an object-relational mapper (ORM) and the database abstraction layer it is built on top of."
+msgstr "Объектно-реляционный проектор (ORM) для PHP. Одной из ключевых возможностей Doctrine является запись запросов к БД на собственном объектно-ориентированном диалекте SQL."
+
+#: ../view/application/index/index.twig:256
+msgid "Is a software architecture style for building scalable web services."
+msgstr "Метод взаимодействия компонентов распределенного приложения в сети Интернет."
+
+#: ../view/application/index/index.twig:267
+msgid "is a cross-platform relational database application. It integrates a database engine with a graphical user interface (GUI) and security features, allowing users to modify the database."
+msgstr "кроссплатформенное приложений реляционной базы данных. Которое предоставляет ядро базы данных с графическим пользовательским интерфейсом (GUI) и функцией безопасности, позволяет пользователям модифицировать базу данных."
+
+#: ../view/application/index/index.twig:276
+msgid "Implementing PHP system to work with Ebay."
+msgstr "Реализация PHP системы для работы с Ebay."
+
+#: ../view/application/index/index.twig:285
+msgid "Implementing PHP system to work with Amazon."
+msgstr "Реализация PHP системы для работы с Amazon."
+
+#: ../view/application/index/index.twig:294
+msgid "is the identification of the real-world geographic location of an object, such as a mobile phone or Internet-connected computer terminal."
+msgstr "выявление реального географического местоположения объекта, например, мобильного телефона или подключенного к Интернету компьютера."
+
+#: ../view/application/index/index.twig:299
+msgid "More about us"
+msgstr "Больше о нас"
+
+#: ../view/application/index/index.twig:306
+#: ../view/application/about/index.twig:93
+msgid "Want to have a quick chat?"
+msgstr "Хотите быстро связаться с нами?"
+
+#: ../view/application/index/index.twig:308
+#: ../view/application/about/index.twig:95
+msgid "We are only a phone call away"
+msgstr "Вы в одном телефонном звонке от этого"
+
+#: ../view/application/index/index.twig:312
+#: ../view/application/about/index.twig:99
+msgid "You can also email us"
+msgstr "Вы так же можете отправить email"
+
+#: ../view/application/index/index.twig:278
+#: ../view/application/about/index.twig:103
+msgid "or Skype"
+msgstr "или Skype"
+
+#: ../view/application/index/index.twig:328
+#: ../view/application/contact/index.twig:20
+msgid "Start your project today"
+msgstr "Начните проект сегодня"
+
+#: ../view/application/index/index.twig:329
+#: ../view/application/contact/index.twig:21
+msgid "If you have suggestions, questions - feel free to write us - we will reply to you shortly!"
+msgstr "Если у вас есть предложение, вопрос - смело пишите нам - мы ответим Вам в ближайшее время!"
+
+#: ../view/application/index/index.twig:342
+#: ../view/application/index/index.twig:343
+#: ../view/application/contact/index.twig:32
+#: ../view/application/contact/index.twig:33
+msgid "Name"
+msgstr "Ваше имя"
+
+#: ../view/application/index/index.twig:346
+#: ../view/application/index/index.twig:347
+#: ../view/application/contact/index.twig:36
+#: ../view/application/contact/index.twig:37
+msgid "Email"
+msgstr "Ваш email"
+
+#: ../view/application/index/index.twig:350
+#: ../view/application/index/index.twig:351
+#: ../view/application/contact/index.twig:40
+#: ../view/application/contact/index.twig:41
+msgid "Subject"
+msgstr "Тема"
+
+#: ../view/application/index/index.twig:354
+#: ../view/application/index/index.twig:355
+#: ../view/application/contact/index.twig:44
+#: ../view/application/contact/index.twig:45
+msgid "Message"
+msgstr "Сообщение"
+
+#: ../view/application/index/index.twig:358
+#: ../view/application/contact/index.twig:48
+msgid "Send"
+msgstr "Отправить"
+
+#: ../view/application/about/index.twig:10
+msgid "Need %sout-of-the-box%s solutions for your idea?"
+msgstr "Ваша идея требует %sнестандартных решений%s?"
+
+#: ../view/application/about/index.twig:11
+msgid "%sAvailable CMS%s doesn’t match your business?"
+msgstr "Вашему бизнесу не подходят %sсуществующие CMS%s?"
+
+#: ../view/application/about/index.twig:12
+msgid "We’re gonna develop Web application you %scan’t refuse%s"
+msgstr "Мы разработаем web-приложение, от которого вы %sне сможете отказаться%s"
+
+#: ../view/application/about/index.twig:21
+msgid "Services"
+msgstr "Услуги"
+
+#: ../view/application/about/index.twig:23
+msgid "We propose a system in which:"
+msgstr "Мы предлагаем систему в которой:"
+
+#: ../view/application/about/index.twig:25
+msgid "%sapplication's functionality%s and architecture are individually designed"
+msgstr "%sархитектура и функциональность%s приложения разработана индивидуально для вас"
+
+#: ../view/application/about/index.twig:26
+msgid "%sapplication logic%s suits your business process"
+msgstr "%sлогика приложения%s согласована с вашими бизнес-процессами"
+
+#: ../view/application/about/index.twig:27
+msgid "%sdatabase structure%s fits your requirement"
+msgstr "%sструктура базы данных%s соответствует вашим требованиям"
+
+#: ../view/application/about/index.twig:28
+msgid "%scorrect website displaying%s on different devices"
+msgstr "%sкорректное отображение%s сайта на различных устройствах"
+
+#: ../view/application/about/index.twig:29
+msgid "highload and safety"
+msgstr "высоконагруженность и безопасность"
+
+#: ../view/application/about/index.twig:41
+msgid "We use modern tools to develop the visual part of web applications. Responsive Web Design (RWD) — is the approach to web design that is aimed at the development of sites that provide the optimal display/view mode and user interaction - easy to read, comfortable navigation, suitable for a wide variety of devices (from desktop to mobile phone)."
+msgstr "Мы используем современные инструменты для создания визуальной части веб-приложений. Отзывчивый веб-дизайн (RWD) – это подход к веб-дизайну, направленный на разработку сайтов, которые обеспечивают оптимальный режим просмотра и взаимодействия с пользователем – легко читать, удобная навигация, подходит для самых разных устройств (от настольного компьютера до мобильного телефона)."
+
+#: ../view/application/about/index.twig:54
+msgid "We place the main emphasis of the server technology on the PHP. It’s the powerful modern tool for creating of dynamic Web applications. To ensure high performance and productivity we use solution on the basis of modern framework Zend Framework that provides high performance, reliability and offers powerful functional capabilities."
+msgstr "Основной упор в серверной технологии мы делаем на язык PHP. Мощный, современный инструмент для создания динамических веб приложений. Для обеспечения высокой производительности и продуктивности – используем решение на базе современного фреймворка Zend Framework, который обеспечивает высокую производительность, надежность и предоставляет богатые функциональные возможности."
+
+#: ../view/application/about/index.twig:67
+msgid "We use wide variety of database management systems, chosen on the basis of assigned tasks. All working systems are able to solve basic tasks - data management and storage - quickly and efficiently, has stood the test of times and has shown good results. You can be sure that your data is in safe hands."
+msgstr "Используем широкий набор систем управления базами данных, выбирая исходя из поставленных задач. Все используемые системы способны быстро и эффективно решать основные задачи – хранение и управление вашими данными и прошли пробу временем, и хорошо себя зарекомендовали. Можете быть уверены, ваши данные будут в надежных руках."
+
+#: ../view/application/about/index.twig:80
+msgid "We will show, tell/explain, write, and teach. We aren’t too lazy to unscramble everything, describe and explain all details of the system. If you wish, we will upgrade or fix everything. If the system is complicated we will spend enough time to make everything absolutely clear for you. We are happy to answer any of your questions."
+msgstr "Покажем, расскажем, напишем, научим. Не ленимся разложить все по полкам, объяснить и расписать все тонкости работы системы. При желании модернизируем, подправим. При сложной системе, уделим достаточно внимания тому, чтобы вам все было предельно ясно. Ответим на любые ваши вопросы."
+
+#: ../view/application/about/index.twig:86
+msgid "Contact us today!"
+msgstr "Связаться"
+
+#: ../view/application/contact/index.twig:8
+msgid "Contact Us"
+msgstr "Связь с нами"
+
+#: ../view/application/contact/index.twig:10
+msgid "Always in touch!"
+msgstr "Всегда на связи!"
+
+#: ../view/application/contact/index.twig:11
+msgid "If you have suggestions, questions - feel free to write us - %swe will reply to you shortly%s!"
+msgstr "Если у вас есть предложение, вопрос – смело пишите нам, %sмы ответим вам в ближайшее время%s!"
+
+#: ../view/application/error/404.twig:3
+msgid "Error 404"
+msgstr "Ошибка 404"
+
+#: ../src/Application/Controller/ContactController.php:63
+msgid "Your mail was sent. We will contact you soon."
+msgstr "Ваше письмо отправлено. Мы свяжемся с вами в ближайшее время."
+
+#: ../src/Application/Controller/ContactController.php:65
+msgid "Invalid email."
+msgstr "Некорректный email адрес."
+
+#: ../src/Application/Controller/ContactController.php:68
+msgid "All fields are required."
+msgstr "Все поля обязательны для заполнения."
