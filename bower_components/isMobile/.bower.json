@@ -1,6 +1,6 @@
 {
   "name": "isMobile",
-  "version": "0.3.6",
+  "version": "0.3.9",
   "main": "isMobile.js",
   "ignore": [
     "**/.*",
@@ -9,14 +9,13 @@
     "tests"
   ],
   "homepage": "https://github.com/kaimallea/isMobile",
-  "_release": "0.3.6",
+  "_release": "0.3.9",
   "_resolution": {
     "type": "version",
-    "tag": "0.3.6",
-    "commit": "b277a8dae9d3fe25c92569507bd796fd351d7505"
+    "tag": "0.3.9",
+    "commit": "84c93a48e09506267241f9f33fd3ae97743f52db"
   },
   "_source": "git://github.com/kaimallea/isMobile.git",
   "_target": "~0.3.6",
-  "_originalSource": "isMobile",
-  "_direct": true
+  "_originalSource": "isMobile"
 }

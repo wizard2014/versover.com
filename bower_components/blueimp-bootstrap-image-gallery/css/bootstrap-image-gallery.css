@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
- * Bootstrap Image Gallery CSS 3.0.0
+ * Bootstrap Image Gallery CSS
  * https://github.com/blueimp/Bootstrap-Image-Gallery
  *
  * Copyright 2013, Sebastian Tschan
@@ -73,15 +73,4 @@
 }
 .blueimp-gallery .modal-body .video-loading a:after {
 	content: none;
-}
-
-@media screen and (min-width: 768px) {
-  .blueimp-gallery .modal-dialog {
-    right: auto;
-    left: auto;
-	width: auto;
-    max-width: 900px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
 }
