@@ -111,19 +111,7 @@ return [
     // mail
     'mailman' => [
 		'MailMan\SMTP' => [
-		'default_sender' => 'site@versover.com',
-			'transport' => [
-				'type' => 'smtp',
-				'options' => [
-					'host' => 'mail.versover.com',
-					'port' => '26',
-					'connection_class' => 'login',
-					'connection_config' => [
-						'username' => 'site@versover.com',
-						'password' => '#H(k=5REg6Tz',
-					],
-				],
-			],
+		
 		],
 	],
 ];
